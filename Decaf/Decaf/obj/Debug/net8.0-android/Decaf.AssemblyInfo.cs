@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Decaf")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+b2066065b187f2da03f89616f021a2deb22cd118")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+a3aa505c953e3cd5f474e9b5d626282b27cde97b")]
 [assembly: System.Reflection.AssemblyProductAttribute("Decaf")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Decaf")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
