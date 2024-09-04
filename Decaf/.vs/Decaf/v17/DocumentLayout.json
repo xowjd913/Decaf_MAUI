@@ -1,12 +1,173 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\Test\\Decaf\\Decaf_MAUI\\Decaf\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{ADF2927E-650F-4336-917C-4A8C63727DC0}|Decaf\\Decaf.csproj|d:\\test\\decaf\\decaf_maui\\decaf\\decaf\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ADF2927E-650F-4336-917C-4A8C63727DC0}|Decaf\\Decaf.csproj|solutionrelative:decaf\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5963C821-142B-4F11-92EE-9526B1C5F370}|Decaf.Base\\Decaf.Base.csproj|d:\\test\\decaf\\decaf_maui\\decaf\\decaf.base\\mvvm\\contentpagebase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5963C821-142B-4F11-92EE-9526B1C5F370}|Decaf.Base\\Decaf.Base.csproj|solutionrelative:decaf.base\\mvvm\\contentpagebase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE6187AB-880B-4E48-9BFF-D7D0F172772A}|Decaf.MainPage\\Decaf.MainPage.csproj|d:\\test\\decaf\\decaf_maui\\decaf\\decaf.mainpage\\views\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CE6187AB-880B-4E48-9BFF-D7D0F172772A}|Decaf.MainPage\\Decaf.MainPage.csproj|solutionrelative:decaf.mainpage\\views\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ADF2927E-650F-4336-917C-4A8C63727DC0}|Decaf\\Decaf.csproj|d:\\test\\decaf\\decaf_maui\\decaf\\decaf\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ADF2927E-650F-4336-917C-4A8C63727DC0}|Decaf\\Decaf.csproj|solutionrelative:decaf\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE6187AB-880B-4E48-9BFF-D7D0F172772A}|Decaf.MainPage\\Decaf.MainPage.csproj|d:\\test\\decaf\\decaf_maui\\decaf\\decaf.mainpage\\views\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE6187AB-880B-4E48-9BFF-D7D0F172772A}|Decaf.MainPage\\Decaf.MainPage.csproj|solutionrelative:decaf.mainpage\\views\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5963C821-142B-4F11-92EE-9526B1C5F370}|Decaf.Base\\Decaf.Base.csproj|d:\\test\\decaf\\decaf_maui\\decaf\\decaf.base\\mvvm\\viewmodelbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5963C821-142B-4F11-92EE-9526B1C5F370}|Decaf.Base\\Decaf.Base.csproj|solutionrelative:decaf.base\\mvvm\\viewmodelbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE6187AB-880B-4E48-9BFF-D7D0F172772A}|Decaf.MainPage\\Decaf.MainPage.csproj|d:\\test\\decaf\\decaf_maui\\decaf\\decaf.mainpage\\viewmodels\\mainpageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE6187AB-880B-4E48-9BFF-D7D0F172772A}|Decaf.MainPage\\Decaf.MainPage.csproj|solutionrelative:decaf.mainpage\\viewmodels\\mainpageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E639995-F89B-49CA-AA2A-3D0855701FB5}|Decaf.Extension\\Decaf.Extension.csproj|d:\\test\\decaf\\decaf_maui\\decaf\\decaf.extension\\pageextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E639995-F89B-49CA-AA2A-3D0855701FB5}|Decaf.Extension\\Decaf.Extension.csproj|solutionrelative:decaf.extension\\pageextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41B37E18-C1BF-48FF-B338-EA7D39B325D5}|Decaf.Utilities\\Decaf.Utilities.csproj|d:\\test\\decaf\\decaf_maui\\decaf\\decaf.utilities\\pageutilities.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41B37E18-C1BF-48FF-B338-EA7D39B325D5}|Decaf.Utilities\\Decaf.Utilities.csproj|solutionrelative:decaf.utilities\\pageutilities.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 215,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "D:\\Test\\Decaf\\Decaf_MAUI\\Decaf\\Decaf\\App.xaml.cs",
+              "RelativeDocumentMoniker": "Decaf\\App.xaml.cs",
+              "ToolTip": "D:\\Test\\Decaf\\Decaf_MAUI\\Decaf\\Decaf\\App.xaml.cs",
+              "RelativeToolTip": "Decaf\\App.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAADwvwgAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-04T05:59:13.793Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MainPage.xaml.cs",
+              "DocumentMoniker": "D:\\Test\\Decaf\\Decaf_MAUI\\Decaf\\Decaf.MainPage\\Views\\MainPage.xaml.cs",
+              "RelativeDocumentMoniker": "Decaf.MainPage\\Views\\MainPage.xaml.cs",
+              "ToolTip": "D:\\Test\\Decaf\\Decaf_MAUI\\Decaf\\Decaf.MainPage\\Views\\MainPage.xaml.cs",
+              "RelativeToolTip": "Decaf.MainPage\\Views\\MainPage.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAADwvwoAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-04T05:33:35.856Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MainPageViewModel.cs",
+              "DocumentMoniker": "D:\\Test\\Decaf\\Decaf_MAUI\\Decaf\\Decaf.MainPage\\ViewModels\\MainPageViewModel.cs",
+              "RelativeDocumentMoniker": "Decaf.MainPage\\ViewModels\\MainPageViewModel.cs",
+              "ToolTip": "D:\\Test\\Decaf\\Decaf_MAUI\\Decaf\\Decaf.MainPage\\ViewModels\\MainPageViewModel.cs",
+              "RelativeToolTip": "Decaf.MainPage\\ViewModels\\MainPageViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAADwvxQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-04T05:32:41.625Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainPage.xaml",
+              "DocumentMoniker": "D:\\Test\\Decaf\\Decaf_MAUI\\Decaf\\Decaf.MainPage\\Views\\MainPage.xaml",
+              "RelativeDocumentMoniker": "Decaf.MainPage\\Views\\MainPage.xaml",
+              "ToolTip": "D:\\Test\\Decaf\\Decaf_MAUI\\Decaf\\Decaf.MainPage\\Views\\MainPage.xaml",
+              "RelativeToolTip": "Decaf.MainPage\\Views\\MainPage.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAADwvw4AAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-09-04T05:32:32.714Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "PageExtensions.cs",
+              "DocumentMoniker": "D:\\Test\\Decaf\\Decaf_MAUI\\Decaf\\Decaf.Extension\\PageExtensions.cs",
+              "RelativeDocumentMoniker": "Decaf.Extension\\PageExtensions.cs",
+              "ToolTip": "D:\\Test\\Decaf\\Decaf_MAUI\\Decaf\\Decaf.Extension\\PageExtensions.cs",
+              "RelativeToolTip": "Decaf.Extension\\PageExtensions.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwBoAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-04T05:29:14.747Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ViewModelBase.cs",
+              "DocumentMoniker": "D:\\Test\\Decaf\\Decaf_MAUI\\Decaf\\Decaf.Base\\MVVM\\ViewModelBase.cs",
+              "RelativeDocumentMoniker": "Decaf.Base\\MVVM\\ViewModelBase.cs",
+              "ToolTip": "D:\\Test\\Decaf\\Decaf_MAUI\\Decaf\\Decaf.Base\\MVVM\\ViewModelBase.cs",
+              "RelativeToolTip": "Decaf.Base\\MVVM\\ViewModelBase.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-04T05:20:36.937Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ContentPageBase.cs",
+              "DocumentMoniker": "D:\\Test\\Decaf\\Decaf_MAUI\\Decaf\\Decaf.Base\\MVVM\\ContentPageBase.cs",
+              "RelativeDocumentMoniker": "Decaf.Base\\MVVM\\ContentPageBase.cs",
+              "ToolTip": "D:\\Test\\Decaf\\Decaf_MAUI\\Decaf\\Decaf.Base\\MVVM\\ContentPageBase.cs",
+              "RelativeToolTip": "Decaf.Base\\MVVM\\ContentPageBase.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAADwvw0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-04T05:20:48.772Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MauiProgram.cs",
+              "DocumentMoniker": "D:\\Test\\Decaf\\Decaf_MAUI\\Decaf\\Decaf\\MauiProgram.cs",
+              "RelativeDocumentMoniker": "Decaf\\MauiProgram.cs",
+              "ToolTip": "D:\\Test\\Decaf\\Decaf_MAUI\\Decaf\\Decaf\\MauiProgram.cs",
+              "RelativeToolTip": "Decaf\\MauiProgram.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-04T05:12:33.349Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "PageUtilities.cs",
+              "DocumentMoniker": "D:\\Test\\Decaf\\Decaf_MAUI\\Decaf\\Decaf.Utilities\\PageUtilities.cs",
+              "RelativeDocumentMoniker": "Decaf.Utilities\\PageUtilities.cs",
+              "ToolTip": "D:\\Test\\Decaf\\Decaf_MAUI\\Decaf\\Decaf.Utilities\\PageUtilities.cs",
+              "RelativeToolTip": "Decaf.Utilities\\PageUtilities.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAADwvwgAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-04T05:26:35.359Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
