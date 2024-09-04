@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Decaf.Extension", "Decaf.Ex
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Decaf.Main", "Decaf.Main\Decaf.Main.csproj", "{EA0290C3-C092-4E8A-A972-696ECBFC5F19}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Decaf.OnBoarding", "Decaf.OnBoarding\Decaf.OnBoarding.csproj", "{3B9434B8-2409-4308-8B91-4D8AAE973FF0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -41,6 +43,10 @@ Global
 		{EA0290C3-C092-4E8A-A972-696ECBFC5F19}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EA0290C3-C092-4E8A-A972-696ECBFC5F19}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EA0290C3-C092-4E8A-A972-696ECBFC5F19}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B9434B8-2409-4308-8B91-4D8AAE973FF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B9434B8-2409-4308-8B91-4D8AAE973FF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B9434B8-2409-4308-8B91-4D8AAE973FF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B9434B8-2409-4308-8B91-4D8AAE973FF0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

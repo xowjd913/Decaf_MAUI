@@ -1,7 +1,10 @@
 ﻿using Decaf.Main.ViewModels;
 using Decaf.Main.Views;
+
+using Decaf.OnBoarding.Views;
+using Decaf.OnBoarding.ViewModels;
+
 using Microsoft.Extensions.Logging;
-using Prism.Ioc;
 using System.Diagnostics;
 
 namespace Decaf
@@ -32,6 +35,7 @@ namespace Decaf
                         Debug.WriteLine($"[{nameof(MauiProgram)}] [L] - Register Types");
 
                         containerRegistry.RegisterForNavigation<MainPage, MainPageViewModel>();
+                        containerRegistry.RegisterForNavigation<OnBoardingPage, OnBoardingPageViewModel>();
                     })
                     .OnInitialized(containerProvider => 
                     {
@@ -66,7 +70,7 @@ namespace Decaf
                     .CreateWindow(async navigationService => 
                     {
                         Debug.WriteLine($"[{nameof(MauiProgram)}] [L] - Create window");
-                        var navigationResult = await navigationService.NavigateAsync("/" + nameof(NavigationPage) + "/" + nameof(MainPage));
+                        var navigationResult = await navigationService.NavigateAsync("/" + nameof(NavigationPage) + "/" + nameof(OnBoardingPage));
                     });
                 })
                 .Build();

@@ -69,5 +69,6 @@
 
 	<ItemGroup>
 	  <ProjectReference Include="..\Decaf.Main\Decaf.Main.csproj" />
+	  <ProjectReference Include="..\Decaf.OnBoarding\Decaf.OnBoarding.csproj" />
 	</ItemGroup>
 </Project>

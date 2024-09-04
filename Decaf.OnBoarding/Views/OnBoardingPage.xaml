@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<base:ContentPageBase xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+
+             xmlns:base="clr-namespace:Decaf.Base.MVVM;assembly=Decaf.Base"
+
+             x:Class="Decaf.OnBoarding.Views.OnBoardingPage"
+
+             NavigationPage.HasNavigationBar="False"
+
+             Title="OnBoardingPage">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="500*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <CarouselView BackgroundColor="Green"
+                      Grid.Row="0">
+            <CarouselView.ItemTemplate>
+                <DataTemplate>
+                </DataTemplate>
+            </CarouselView.ItemTemplate>
+        </CarouselView>
+        <Grid Grid.Row="1"
+              ColumnSpacing="20"
+              Margin="10, 0, 10, 0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Button Text="Next"
+                    Grid.Column="1"/>
+            <Button Text="Back"
+                    Grid.Column="0"/>
+            
+        </Grid>
+    </Grid>
+</base:ContentPageBase>
