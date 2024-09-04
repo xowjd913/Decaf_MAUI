@@ -11,7 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Decaf.Utility", "Decaf.Util
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Decaf.Extension", "Decaf.Extension\Decaf.Extension.csproj", "{9E639995-F89B-49CA-AA2A-3D0855701FB5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Decaf.Main", "Decaf.MainPage\Decaf.Main.csproj", "{CE6187AB-880B-4E48-9BFF-D7D0F172772A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Decaf.Main", "Decaf.Main\Decaf.Main.csproj", "{EA0290C3-C092-4E8A-A972-696ECBFC5F19}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,10 +37,10 @@ Global
 		{9E639995-F89B-49CA-AA2A-3D0855701FB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9E639995-F89B-49CA-AA2A-3D0855701FB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9E639995-F89B-49CA-AA2A-3D0855701FB5}.Release|Any CPU.Build.0 = Release|Any CPU
-		{CE6187AB-880B-4E48-9BFF-D7D0F172772A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CE6187AB-880B-4E48-9BFF-D7D0F172772A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CE6187AB-880B-4E48-9BFF-D7D0F172772A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CE6187AB-880B-4E48-9BFF-D7D0F172772A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA0290C3-C092-4E8A-A972-696ECBFC5F19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA0290C3-C092-4E8A-A972-696ECBFC5F19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA0290C3-C092-4E8A-A972-696ECBFC5F19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA0290C3-C092-4E8A-A972-696ECBFC5F19}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
