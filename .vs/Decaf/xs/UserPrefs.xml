@@ -1,0 +1,23 @@
+﻿<Properties StartupConfiguration="{ADF2927E-650F-4336-917C-4A8C63727DC0}|Default">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Decaf/MauiProgram.cs">
+    <Files>
+      <File FileName="Decaf/MauiProgram.cs" Line="32" Column="90" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Decaf" expanded="True">
+            <Node name="Decaf" expanded="True">
+              <Node name="MauiProgram.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Decaf PreferredExecutionTarget="Android.Pixel_3a_API_34_extension_level_7_arm64-v8a" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints />
+  <MultiItemStartupConfigurations />
+</Properties>

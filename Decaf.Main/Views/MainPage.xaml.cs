@@ -1,6 +1,6 @@
 using Decaf.Base.MVVM;
 
-namespace Decaf.MainPage.Views;
+namespace Decaf.Main.Views;
 
 public partial class MainPage : ContentPageBase
 {

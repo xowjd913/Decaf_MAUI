@@ -1,5 +1,5 @@
-﻿using Decaf.MainPage.ViewModels;
-using Decaf.MainPage.Views;
+﻿using Decaf.Main.ViewModels;
+using Decaf.Main.Views;
 using Microsoft.Extensions.Logging;
 using Prism.Ioc;
 using System.Diagnostics;
@@ -31,7 +31,7 @@ namespace Decaf
                     {
                         Debug.WriteLine($"[{nameof(MauiProgram)}] [L] - Register Types");
 
-                        containerRegistry.RegisterForNavigation<MainPage.Views.MainPage, MainPageViewModel>();
+                        containerRegistry.RegisterForNavigation<MainPage, MainPageViewModel>();
                     })
                     .OnInitialized(containerProvider => 
                     {

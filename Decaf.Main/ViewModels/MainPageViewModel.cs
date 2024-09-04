@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Decaf.MainPage.ViewModels
+namespace Decaf.Main.ViewModels
 {
     public class MainPageViewModel : ViewModelBase
     {
