@@ -26,4 +26,18 @@
 		<PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="$(MauiVersion)" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <None Remove="Platforms\Android\" />
+	  <None Remove="Platforms\iOS\" />
+	  <None Remove="Platforms\MacCatalyst\" />
+	  <None Remove="Platforms\Tizen\" />
+	  <None Remove="Platforms\Windows\" />
+	</ItemGroup>
+	<ItemGroup>
+	  <Folder Include="Platforms\Android\" />
+	  <Folder Include="Platforms\iOS\" />
+	  <Folder Include="Platforms\MacCatalyst\" />
+	  <Folder Include="Platforms\Tizen\" />
+	  <Folder Include="Platforms\Windows\" />
+	</ItemGroup>
 </Project>
