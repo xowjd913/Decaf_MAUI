@@ -10,31 +10,112 @@
 
              Title="OnBoardingPage">
 
-    <Grid>
+    <Grid Margin="24, 10, 24, 28">
         <Grid.RowDefinitions>
-            <RowDefinition Height="500*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
-        <CarouselView BackgroundColor="Green"
-                      Grid.Row="0">
-            <CarouselView.ItemTemplate>
-                <DataTemplate>
-                </DataTemplate>
-            </CarouselView.ItemTemplate>
-        </CarouselView>
-        <Grid Grid.Row="1"
-              ColumnSpacing="20"
-              Margin="10, 0, 10, 0">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-            </Grid.ColumnDefinitions>
+            <VerticalStackLayout x:Name="verticalRoot"
 
-            <Button Text="Next"
-                    Grid.Column="1"/>
-            <Button Text="Back"
-                    Grid.Column="0"/>
-            
-        </Grid>
+                                 Grid.Row="0"
+
+                                 VerticalOptions="FillAndExpand">
+
+                <HorizontalStackLayout HorizontalOptions="End">
+                    <BoxView BackgroundColor="Green"
+                             WidthRequest="20"
+                             HeightRequest="20"/>
+                </HorizontalStackLayout>
+
+                <Label Text="커피를 하루에 몇 잔&#10;마시나요?"
+                       FontSize="28"
+                       Margin="0, 40, 120, 24"/>
+
+                <Frame HeightRequest="70"
+                       Margin="0, 0, 0, 8"
+                       BackgroundColor="#EEEEEE">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Label Grid.Column="0"
+                               Text="3잔 이상"
+                               FontSize="16"
+
+                               HorizontalTextAlignment="Start"
+                               VerticalTextAlignment="Center"/>
+                        <CheckBox Grid.Column="1"
+
+                                  WidthRequest="22"
+                                  HeightRequest="22"/>
+                    </Grid>
+                </Frame>
+                <Frame HeightRequest="70"
+                       Margin="0, 0, 0, 8"
+                       BackgroundColor="#EEEEEE">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Label Grid.Column="0"
+                               Text="1잔 이상"
+                               FontSize="16"
+
+                               HorizontalTextAlignment="Start"
+                               VerticalTextAlignment="Center"/>
+                        <CheckBox Grid.Column="1"
+
+                                  WidthRequest="22"
+                                  HeightRequest="22"/>
+                    </Grid>
+                </Frame>
+                <Frame HeightRequest="70"
+                       Margin="0, 0, 0, 8"
+                       BackgroundColor="#EEEEEE">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Label Grid.Column="0"
+                               Text="아예 못 마심"
+                               FontSize="16"
+
+                               HorizontalTextAlignment="Start"
+                               VerticalTextAlignment="Center"/>
+                        <CheckBox Grid.Column="1"
+
+                                  WidthRequest="22"
+                                  HeightRequest="22"/>
+                    </Grid>
+                </Frame>
+                <BoxView VerticalOptions="FillAndExpand"/>
+                <!--<CarouselView Grid.Row="0">
+                    <CarouselView.ItemTemplate>
+                        <DataTemplate>
+                            <VerticalStackLayout>
+
+                            </VerticalStackLayout>
+                        </DataTemplate>
+                    </CarouselView.ItemTemplate>
+                </CarouselView>-->
+        </VerticalStackLayout>
+
+        <BoxView Grid.Row="1"
+                 BackgroundColor="Transparent"/>
+
+        <Button Grid.Row="2"
+
+                Text="Next"
+
+                VerticalOptions="End"
+                HorizontalOptions="Fill"/>
     </Grid>
+
 </base:ContentPageBase>
