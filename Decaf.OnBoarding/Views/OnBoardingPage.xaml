@@ -3,9 +3,10 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
 
              xmlns:base="clr-namespace:Decaf.Base.MVVM;assembly=Decaf.Base"
+             xmlns:template="clr-namespace:Decaf.Template;assembly=Decaf.Template"
 
              x:Class="Decaf.OnBoarding.Views.OnBoardingPage"
-
+             
              NavigationPage.HasNavigationBar="False"
 
              Title="OnBoardingPage">
@@ -31,70 +32,15 @@
                 <Label Text="커피를 하루에 몇 잔&#10;마시나요?"
                        FontSize="28"
                        Margin="0, 40, 120, 24"/>
+                <template:OnBoardingCheckBoxControl Text="3잔 이상"
+                                                    IsChecked="False"/>
 
-                <Frame HeightRequest="70"
-                       Margin="0, 0, 0, 8"
-                       BackgroundColor="#EEEEEE">
-                    <Grid>
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="*"/>
-                            <ColumnDefinition Width="Auto"/>
-                        </Grid.ColumnDefinitions>
+                <template:OnBoardingCheckBoxControl Text="1잔"
+                                                    IsChecked="False"/>
 
-                        <Label Grid.Column="0"
-                               Text="3잔 이상"
-                               FontSize="16"
+                <template:OnBoardingCheckBoxControl Text="아예 못 마심"
+                                                    IsChecked="False"/>
 
-                               HorizontalTextAlignment="Start"
-                               VerticalTextAlignment="Center"/>
-                        <CheckBox Grid.Column="1"
-
-                                  WidthRequest="22"
-                                  HeightRequest="22"/>
-                    </Grid>
-                </Frame>
-                <Frame HeightRequest="70"
-                       Margin="0, 0, 0, 8"
-                       BackgroundColor="#EEEEEE">
-                    <Grid>
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="*"/>
-                            <ColumnDefinition Width="Auto"/>
-                        </Grid.ColumnDefinitions>
-
-                        <Label Grid.Column="0"
-                               Text="1잔 이상"
-                               FontSize="16"
-
-                               HorizontalTextAlignment="Start"
-                               VerticalTextAlignment="Center"/>
-                        <CheckBox Grid.Column="1"
-
-                                  WidthRequest="22"
-                                  HeightRequest="22"/>
-                    </Grid>
-                </Frame>
-                <Frame HeightRequest="70"
-                       Margin="0, 0, 0, 8"
-                       BackgroundColor="#EEEEEE">
-                    <Grid>
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="*"/>
-                            <ColumnDefinition Width="Auto"/>
-                        </Grid.ColumnDefinitions>
-
-                        <Label Grid.Column="0"
-                               Text="아예 못 마심"
-                               FontSize="16"
-
-                               HorizontalTextAlignment="Start"
-                               VerticalTextAlignment="Center"/>
-                        <CheckBox Grid.Column="1"
-
-                                  WidthRequest="22"
-                                  HeightRequest="22"/>
-                    </Grid>
-                </Frame>
                 <BoxView VerticalOptions="FillAndExpand"/>
                 <!--<CarouselView Grid.Row="0">
                     <CarouselView.ItemTemplate>

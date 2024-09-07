@@ -1,5 +1,5 @@
 ﻿<Properties StartupConfiguration="{ADF2927E-650F-4336-917C-4A8C63727DC0}|Default">
-  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints />
   <MonoDevelop.Ide.Workbench ActiveDocument="Decaf.OnBoarding/Views/OnBoardingPage.xaml">
     <Files>
       <File FileName="Decaf/MauiProgram.cs" Line="51" Column="84" />
@@ -34,12 +34,11 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.MonoDroid LastDeploySdkVersion="34.0.113" />
+  <MonoDevelop.Ide.ItemProperties.Decaf.Template FirstBuild="True" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Decaf PreferredExecutionTarget="Android.Pixel_3a_API_34_extension_level_7_arm64-v8a" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.Decaf PreferredExecutionTarget="Android.Pixel_3a_API_34_extension_level_7_arm64-v8a" />
   <Xamarin.Addins.Core.Project ActiveDebugTarget="Android.Pixel_3a_API_34_extension_level_7_arm64-v8a" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.MonoDroid LastDeploySdkVersion="34.0.113" />
 </Properties>
