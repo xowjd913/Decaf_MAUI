@@ -1,44 +1,59 @@
 ﻿<Properties StartupConfiguration="{ADF2927E-650F-4336-917C-4A8C63727DC0}|Default">
-  <MonoDevelop.Ide.DebuggingService.Breakpoints />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Decaf.OnBoarding/Views/OnBoardingPage.xaml">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Decaf Xamarin.HotReload.DebuggerTimeoutException.Decaf.HideInfoBar="True" PreferredExecutionTarget="Android.Pixel_3a_API_34_extension_level_7_arm64-v8a" />
+  <MonoDevelop.MonoDroid LastDeploySdkVersion="34.0.113" />
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="Android.Pixel_3a_API_34_extension_level_7_arm64-v8a" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workbench ActiveDocument="Decaf.Template/Decaf.Template.csproj">
     <Files>
-      <File FileName="Decaf/MauiProgram.cs" Line="51" Column="84" />
+      <File FileName="Decaf.OnBoarding/Views/OnBoardingPage.xaml" Line="32" Column="52" />
+      <File FileName="Decaf/MauiProgram.cs" />
       <File FileName="Decaf.Main/Views/MainPage.xaml.cs" />
       <File FileName="Decaf.Main/ViewModels/MainPageViewModel.cs" />
-      <File FileName="Decaf.OnBoarding/Views/OnBoardingPage.xaml" Line="41" Column="1" />
-      <File FileName="Decaf.OnBoarding/Views/OnBoardingPage.xaml.cs" Line="12" Column="1" />
-      <File FileName="Decaf/App.xaml" Line="1" Column="1" />
-      <File FileName="Decaf.Main/Views/MainPage.xaml" Line="15" Column="24" />
-      <File FileName="Decaf.OnBoarding/ViewModels/OnBoardingPageViewModel.cs" Line="17" Column="2" />
+      <File FileName="Decaf.OnBoarding/Views/OnBoardingPage.xaml.cs" />
+      <File FileName="Decaf/App.xaml" />
+      <File FileName="Decaf.Main/Views/MainPage.xaml" />
+      <File FileName="Decaf/Resources/Styles/Styles.xaml" />
+      <File FileName="Decaf.Converter/BoolToColorConverter.cs" Line="43" Column="6" />
+      <File FileName="Decaf.Template/RoundedCheckBox.xaml" Line="32" Column="47" />
+      <File FileName="Decaf.Template/RoundedCheckBox.xaml.cs" Line="26" Column="1" />
+      <File FileName="Decaf.Template/OnBoardingCheckBox/OnBoardingCheckBoxControl.xaml" Line="25" Column="41" />
+      <File FileName="Decaf.Template/OnBoardingCheckBox/OnBoardingCheckBoxControl.xaml.cs" Line="19" Column="44" />
+      <File FileName="Decaf.Template/Decaf.Template.csproj" Line="48" Column="13" />
+      <File FileName="Decaf.OnBoarding/ViewModels/OnBoardingPageViewModel.cs" Line="28" Column="1" NotebookId="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Decaf" expanded="True">
-            <Node name="Decaf" expanded="True" />
-            <Node name="Decaf.Main" expanded="True">
-              <Node name="Platforms" expanded="True" />
-              <Node name="ViewModels" expanded="True" />
-              <Node name="Views" expanded="True">
-                <Node name="MainPage.xaml" expanded="True" />
+            <Node name="Decaf" expanded="True">
+              <Node name="Resources" expanded="True">
+                <Node name="Images" expanded="True" />
               </Node>
             </Node>
             <Node name="Decaf.OnBoarding" expanded="True">
               <Node name="ViewModels" expanded="True" />
-              <Node name="Views" expanded="True">
-                <Node name="OnBoardingPage.xaml" expanded="True" />
+              <Node name="Views" expanded="True" />
+            </Node>
+            <Node name="Decaf.Template" selected="True">
+              <Node name="OnBoardingCheckBox" expanded="True">
+                <Node name="OnBoardingCheckBoxControl.xaml" expanded="True" />
+                <Node name="RoundedCheckBox.xaml" expanded="True" />
+              </Node>
+              <Node name="Resources" expanded="True">
+                <Node name="Images" expanded="True" />
               </Node>
             </Node>
           </Node>
         </State>
       </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.Decaf.Template FirstBuild="True" />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.Decaf PreferredExecutionTarget="Android.Pixel_3a_API_34_extension_level_7_arm64-v8a" />
-  <Xamarin.Addins.Core.Project ActiveDebugTarget="Android.Pixel_3a_API_34_extension_level_7_arm64-v8a" />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.MonoDroid LastDeploySdkVersion="34.0.113" />
 </Properties>

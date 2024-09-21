@@ -33,7 +33,7 @@
                        FontSize="28"
                        Margin="0, 40, 120, 24"/>
                 <template:OnBoardingCheckBoxControl Text="3잔 이상"
-                                                    IsChecked="False"/>
+                                                    IsChecked="True"/>
 
                 <template:OnBoardingCheckBoxControl Text="1잔"
                                                     IsChecked="False"/>
@@ -42,15 +42,7 @@
                                                     IsChecked="False"/>
 
                 <BoxView VerticalOptions="FillAndExpand"/>
-                <!--<CarouselView Grid.Row="0">
-                    <CarouselView.ItemTemplate>
-                        <DataTemplate>
-                            <VerticalStackLayout>
 
-                            </VerticalStackLayout>
-                        </DataTemplate>
-                    </CarouselView.ItemTemplate>
-                </CarouselView>-->
         </VerticalStackLayout>
 
         <BoxView Grid.Row="1"
@@ -59,6 +51,8 @@
         <Button Grid.Row="2"
 
                 Text="Next"
+
+                BackgroundColor="#557705"
 
                 VerticalOptions="End"
                 HorizontalOptions="Fill"/>

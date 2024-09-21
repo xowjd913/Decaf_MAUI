@@ -1,12 +1,29 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+
+             xmlns:template="clr-namespace:Decaf.Template"
+             xmlns:converter="clr-namespace:Decaf.Converter;assembly=Decaf.Converter"
+
              x:Class="Decaf.Template.OnBoardingCheckBoxControl">
+    <ContentView.Resources>
+        <ResourceDictionary>
+            <converter:BoolToColorConverter x:Key="BoolToColorConverter"/>
+        </ResourceDictionary>
+    </ContentView.Resources>
     <ContentView.ControlTemplate>
         <ControlTemplate>
             <Frame HeightRequest="70"
-                    Margin="0, 0, 0, 8"
-                    BackgroundColor="#EEEEEE">
+                   Margin="0, 0, 0, 8"
+
+                   BackgroundColor="{TemplateBinding IsChecked, Converter={StaticResource BoolToColorConverter}, ConverterParameter='#FFFFFF|#EEEEEE'}"
+
+                   BorderColor="Transparent">
+
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnCheckBoxTapped"/>
+                </Frame.GestureRecognizers>
+
                 <Grid>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="*"/>
@@ -19,12 +36,9 @@
 
                             HorizontalTextAlignment="Start"
                             VerticalTextAlignment="Center"/>
-                    <CheckBox Grid.Column="1"
 
-                                WidthRequest="22"
-                                HeightRequest="22"
-
-                                IsChecked="{TemplateBinding IsChecked}"/>
+                    <template:RoundedCheckBox IsChecked="{TemplateBinding IsChecked}"
+                                              HorizontalOptions="End"/>
                 </Grid>
             </Frame>
         </ControlTemplate>

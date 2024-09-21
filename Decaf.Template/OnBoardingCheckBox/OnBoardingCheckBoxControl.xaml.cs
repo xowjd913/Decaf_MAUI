@@ -1,4 +1,6 @@
-﻿namespace Decaf.Template;
+﻿using System.Diagnostics;
+
+namespace Decaf.Template;
 
 public partial class OnBoardingCheckBoxControl : ContentView
 {
@@ -22,4 +24,11 @@ public partial class OnBoardingCheckBoxControl : ContentView
 
 	public OnBoardingCheckBoxControl()
 		=> InitializeComponent();
+
+
+    private void OnCheckBoxTapped(object sender, TappedEventArgs e)
+    {
+        Debug.WriteLine("[L] : OnCheckBoxTAP !!!!!!");
+        IsChecked = !IsChecked;
+    }
 }

@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Decaf.OnBoarding", "Decaf.O
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Decaf.Template", "Decaf.Template\Decaf.Template.csproj", "{11458032-A55E-489B-8639-26C306C4ED0D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Decaf.Converter", "Decaf.Converter\Decaf.Converter.csproj", "{ECFDDAE6-3E16-422A-941A-AAB4538B6630}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -53,6 +55,10 @@ Global
 		{11458032-A55E-489B-8639-26C306C4ED0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{11458032-A55E-489B-8639-26C306C4ED0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{11458032-A55E-489B-8639-26C306C4ED0D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ECFDDAE6-3E16-422A-941A-AAB4538B6630}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECFDDAE6-3E16-422A-941A-AAB4538B6630}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECFDDAE6-3E16-422A-941A-AAB4538B6630}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECFDDAE6-3E16-422A-941A-AAB4538B6630}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

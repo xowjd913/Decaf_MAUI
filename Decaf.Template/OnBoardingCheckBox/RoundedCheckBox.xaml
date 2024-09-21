@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Decaf.Template.RoundedCheckBox"
+             x:Name="CustomRoundedCheckBox">
+    <Grid>
+        <Frame x:Name="CheckBoxFrame"
+
+               WidthRequest="22"
+               HeightRequest="22"
+
+               CornerRadius="15"
+               BackgroundColor="#557705"
+
+               BorderColor="Transparent"
+
+               IsVisible="{Binding Source={x:Reference CustomRoundedCheckBox}, Path=IsChecked}"
+
+               HorizontalOptions="Center"
+               VerticalOptions="Center">
+        </Frame>
+
+        <Image HorizontalOptions="Center"
+               VerticalOptions="Center"
+
+               WidthRequest="10"
+               HeightRequest="8"
+
+               IsVisible="{Binding Source={x:Reference CustomRoundedCheckBox}, Path=IsChecked}"
+
+               Source="Resources/Images/check"/>
+    </Grid>
+</ContentView>
+
