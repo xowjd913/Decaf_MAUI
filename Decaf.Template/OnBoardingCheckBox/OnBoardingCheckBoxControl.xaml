@@ -16,6 +16,8 @@
             <Frame HeightRequest="70"
                    Margin="0, 0, 0, 8"
 
+                   CornerRadius="10"
+
                    BackgroundColor="{TemplateBinding IsChecked, Converter={StaticResource BoolToColorConverter}, ConverterParameter='#FFFFFF|#EEEEEE'}"
 
                    BorderColor="Transparent">

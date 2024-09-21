@@ -29,18 +29,29 @@
                              HeightRequest="20"/>
                 </HorizontalStackLayout>
 
-                <Label Text="커피를 하루에 몇 잔&#10;마시나요?"
-                       FontSize="28"
-                       Margin="0, 40, 120, 24"/>
-                <CollectionView ItemsSource="{Binding OnBoardingSurveys}">
-                    <CollectionView.ItemTemplate>
+                <CarouselView ItemsSource="{Binding SurveyPages}"
+                              Position="{Binding CurrentPage}"
+                              IsSwipeEnabled="False"
+                              Loop="False">
+                    <CarouselView.ItemTemplate>
                         <DataTemplate>
-                            <template:OnBoardingCheckBoxControl Text="{Binding Text}"
-                                                                IsChecked="{Binding IsChecked, Mode=TwoWay}"/>
+                            <StackLayout VerticalOptions="FillAndExpand"
+                                         HorizontalOptions="FillAndExpand">
+                                <Label Text="{Binding Title}"
+                                        FontSize="28"
+                                        Margin="0, 40, 0, 24"/>
+                                <CollectionView ItemsSource="{Binding Surveys}">
+                                    <CollectionView.ItemTemplate>
+                                        <DataTemplate>
+                                            <template:OnBoardingCheckBoxControl Text="{Binding Text}"
+                                                                                IsChecked="{Binding IsChecked, Mode=TwoWay}"/>
+                                        </DataTemplate>
+                                    </CollectionView.ItemTemplate>
+                                </CollectionView>
+                            </StackLayout>
                         </DataTemplate>
-                    </CollectionView.ItemTemplate>
-                </CollectionView>
-                <BoxView VerticalOptions="FillAndExpand"/>
+                    </CarouselView.ItemTemplate>
+                </CarouselView>
 
         </VerticalStackLayout>
 
@@ -49,9 +60,13 @@
 
         <Button Grid.Row="2"
 
+                Command="{Binding OnNextSurveyPageButtonClickCommand}"
+
                 Text="Next"
 
                 BackgroundColor="#557705"
+
+                CornerRadius="10"
 
                 VerticalOptions="End"
                 HorizontalOptions="Fill"/>

@@ -12,12 +12,23 @@ namespace Decaf.OnBoarding.ViewModels
     {
 
         #region [ Command ]
-        public ICommand IsTappedToggleCommand { get; private set; }
+        public ICommand OnNextSurveyPageButtonClickCommand { get; private set; }
         #endregion
 
         #region [ Properties ]
-        public ObservableCollection<OnBoardingSurvey> OnBoardingSurveys { get; private set; }
+        public ObservableCollection<OnBoardingSurveyPage> SurveyPages { get; private set; }
         #endregion
+
+        private int currentPage;
+        public int CurrentPage
+        {
+            get => currentPage;
+            set
+            {
+                currentPage = value;
+                OnPropertyChanged(new(nameof(CurrentPage)));
+            }
+        }
 
         public OnBoardingPageViewModel(
                 INavigationService navigationService
@@ -26,23 +37,31 @@ namespace Decaf.OnBoarding.ViewModels
         {
             Debug.WriteLine($"[{nameof(OnBoardingPageViewModel)}] [L] : Initialize....");
 
-            IsTappedToggleCommand = new Command(() =>
-            {
-                Debug.WriteLine($"[{nameof(OnBoardingPageViewModel)}] [L] : Tapped....");
-            });
+            CreateOnBoardingSurveyPages();
 
-            CreateOnBoardingSurveys();
+            OnNextSurveyPageButtonClickCommand = new Command(OnNextSurveyPageButtonClick);
         }
 
 
+        #region [ Command sources ]
+        private void OnNextSurveyPageButtonClick()
+        {
+            if (CurrentPage == SurveyPages.Count - 1)
+                return;
+
+            CurrentPage++;
+        }
+        #endregion
+
         #region [ Private methods ]
-        private void CreateOnBoardingSurveys()
+        private void CreateOnBoardingSurveyPages()
         {
             void OnActiveIsChecked(string text)
             {
                 Debug.WriteLine($"[L] : {text} CHECKED !!!!");
 
-                var otherSurveys = OnBoardingSurveys
+                var otherSurveys = SurveyPages[CurrentPage]
+                    .Surveys
                     .Where(o => o.Text.Equals(text) == false)
                     .ToList();
 
@@ -52,25 +71,76 @@ namespace Decaf.OnBoarding.ViewModels
                 });
             }
 
-            OnBoardingSurveys = new ObservableCollection<OnBoardingSurvey>()
+            SurveyPages = new ObservableCollection<OnBoardingSurveyPage>();
+
+            SurveyPages.Add(new OnBoardingSurveyPage()
             {
-                new(OnActiveIsChecked)
+                Title = "커피를 하루에 몇 잔\n드시나요?",
+                Surveys = new ObservableCollection<OnBoardingSurvey>()
                 {
-                    Text = "3잔 이상",
-                    IsChecked = false,
-                },
-                new(OnActiveIsChecked)
+                    new(OnActiveIsChecked)
+                    {
+                        Text = "3잔 이상",
+                        IsChecked = false,
+                    },
+                    new(OnActiveIsChecked)
+                    {
+                        Text = "1자",
+                        IsChecked = false,
+                    },
+                    new(OnActiveIsChecked)
+                    {
+                        Text = "아예 못 마심",
+                        IsChecked = false,
+                    },
+                }
+            });
+            SurveyPages.Add(new OnBoardingSurveyPage()
+            {
+                Title = "카페인을 줄이려는\n이유가 뭡니까?",
+                Surveys = new ObservableCollection<OnBoardingSurvey>()
                 {
-                    Text = "1잔",
-                    IsChecked = false,
-                },
-                new(OnActiveIsChecked)
+                    new(OnActiveIsChecked)
+                    {
+                        Text = "건강이 좋지 않아서",
+                        IsChecked = false,
+                    },
+                    new(OnActiveIsChecked)
+                    {
+                        Text = "임신 중이라서",
+                        IsChecked = false,
+                    },
+                    new(OnActiveIsChecked)
+                    {
+                        Text = "잠을 못 자서",
+                        IsChecked = false,
+                    },
+                    new(OnActiveIsChecked)
+                    {
+                        Text = "청소년이라 걱정되서",
+                        IsChecked = false,
+                    },
+                }
+            });
+            SurveyPages.Add(new OnBoardingSurveyPage()
+            {
+                Title = "차(tea)를\n좋아하십니까?",
+                Surveys = new ObservableCollection<OnBoardingSurvey>()
                 {
-                    Text = "아예 못 마심",
-                    IsChecked = false,
-                },
-            };
+                    new(OnActiveIsChecked)
+                    {
+                        Text = "예",
+                        IsChecked = false,
+                    },
+                    new(OnActiveIsChecked)
+                    {
+                        Text = "아니요",
+                        IsChecked = false,
+                    },
+                }
+            });
         }
+
         #endregion
     }
 }
