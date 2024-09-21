@@ -13,6 +13,7 @@ namespace Decaf.OnBoarding.ViewModels
 
         #region [ Command ]
         public ICommand OnNextSurveyPageButtonClickCommand { get; private set; }
+        public ICommand OnPrevSurveyPageButtonClickCommand { get; private set; }
         #endregion
 
         #region [ Properties ]
@@ -30,6 +31,17 @@ namespace Decaf.OnBoarding.ViewModels
             }
         }
 
+        private bool isVisibleBackButton;
+        public bool IsVisibleBackButton
+        {
+            get => isVisibleBackButton;
+            set
+            {
+                isVisibleBackButton = value;
+                OnPropertyChanged(new(nameof(IsVisibleBackButton)));
+            }
+        }
+
         public OnBoardingPageViewModel(
                 INavigationService navigationService
             )
@@ -40,6 +52,7 @@ namespace Decaf.OnBoarding.ViewModels
             CreateOnBoardingSurveyPages();
 
             OnNextSurveyPageButtonClickCommand = new Command(OnNextSurveyPageButtonClick);
+            OnPrevSurveyPageButtonClickCommand = new Command(OnPrevSurveyPageButtonClick);
         }
 
 
@@ -50,6 +63,15 @@ namespace Decaf.OnBoarding.ViewModels
                 return;
 
             CurrentPage++;
+            IsVisibleBackButton = CurrentPage != 0;
+        }
+        private void OnPrevSurveyPageButtonClick()
+        {
+            if (CurrentPage == 0)
+                return;
+
+            CurrentPage--;
+            IsVisibleBackButton = CurrentPage != 0;
         }
         #endregion
 

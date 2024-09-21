@@ -52,6 +52,6 @@
 	  <BundleResource Include="Resources\Images\check.svg" />
 	</ItemGroup>
 	<ItemGroup>
-		<MauiImage Include="Resources\Images\check.svg" Resize="false"/>
+		<MauiImage Include="Resources\Images\check.svg"/>
 	</ItemGroup>
 </Project>

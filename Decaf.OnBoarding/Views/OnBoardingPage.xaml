@@ -11,28 +11,50 @@
 
              Title="OnBoardingPage">
 
-    <Grid Margin="24, 10, 24, 28">
+    <Grid Margin="24, 0, 24, 28">
         <Grid.RowDefinitions>
+            <RowDefinition Height="10"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
+
+            <BoxView HeightRequest="10"
+                     Grid.Row="0"
+                     BackgroundColor="Transparent"/>
+
             <VerticalStackLayout x:Name="verticalRoot"
 
-                                 Grid.Row="0"
+                                 Grid.Row="1"
 
                                  VerticalOptions="FillAndExpand">
 
-                <HorizontalStackLayout HorizontalOptions="End">
+                <StackLayout Orientation="Horizontal"
+                             HeightRequest="20">
+
+                    <ImageButton Source="Resources/Images/back_page_button"
+
+                                 WidthRequest="10"
+
+                                 Command="{Binding OnPrevSurveyPageButtonClickCommand}"
+                                 IsVisible="{Binding IsVisibleBackButton}"/>
+
+                    <BoxView HorizontalOptions="FillAndExpand"
+                             BackgroundColor="Transparent"/>
+
                     <BoxView BackgroundColor="Green"
                              WidthRequest="20"
                              HeightRequest="20"/>
-                </HorizontalStackLayout>
+                </StackLayout>
 
                 <CarouselView ItemsSource="{Binding SurveyPages}"
                               Position="{Binding CurrentPage}"
                               IsSwipeEnabled="False"
-                              Loop="False">
+                              Loop="False"
+
+                              VerticalOptions="FillAndExpand"
+                              HorizontalOptions="FillAndExpand">
+
                     <CarouselView.ItemTemplate>
                         <DataTemplate>
                             <StackLayout VerticalOptions="FillAndExpand"
@@ -55,10 +77,10 @@
 
         </VerticalStackLayout>
 
-        <BoxView Grid.Row="1"
+        <BoxView Grid.Row="2"
                  BackgroundColor="Transparent"/>
 
-        <Button Grid.Row="2"
+        <Button Grid.Row="3"
 
                 Command="{Binding OnNextSurveyPageButtonClickCommand}"
 

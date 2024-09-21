@@ -13,7 +13,7 @@ namespace Decaf
 
             if (Build.VERSION.SdkInt >= BuildVersionCodes.Lollipop)
             {
-                Window?.SetStatusBarColor(Android.Graphics.Color.Black);
+                Window?.SetStatusBarColor(Android.Graphics.Color.White);
             }
         }
     }

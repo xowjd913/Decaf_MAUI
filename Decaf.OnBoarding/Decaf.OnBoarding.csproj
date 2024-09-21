@@ -35,6 +35,9 @@
 	  <None Remove="Views\" />
 	  <None Remove="ViewModels\" />
 	  <None Remove="Models\" />
+	  <None Remove="Resources\" />
+	  <None Remove="Resources\Images\" />
+	  <None Remove="Resources\Images\back_page_button.svg" />
 	</ItemGroup>
 	<ItemGroup>
 	  <Folder Include="Platforms\Android\" />
@@ -45,11 +48,19 @@
 	  <Folder Include="Views\" />
 	  <Folder Include="ViewModels\" />
 	  <Folder Include="Models\" />
+	  <Folder Include="Resources\" />
+	  <Folder Include="Resources\Images\" />
 	</ItemGroup>
 	<ItemGroup>
 	  <ProjectReference Include="..\Decaf.Utilities\Decaf.Utility.csproj" />
 	  <ProjectReference Include="..\Decaf.Extension\Decaf.Extension.csproj" />
 	  <ProjectReference Include="..\Decaf.Base\Decaf.Base.csproj" />
 	  <ProjectReference Include="..\Decaf.Template\Decaf.Template.csproj" />
+	</ItemGroup>
+	<ItemGroup>
+	  <BundleResource Include="Resources\Images\back_page_button.svg" />
+	</ItemGroup>
+	<ItemGroup>
+		<MauiImage Include="Resources\Images\back_page_button.svg"/>
 	</ItemGroup>
 </Project>
