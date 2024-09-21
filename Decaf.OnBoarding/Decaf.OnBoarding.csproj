@@ -34,6 +34,7 @@
 	  <None Remove="Platforms\Windows\" />
 	  <None Remove="Views\" />
 	  <None Remove="ViewModels\" />
+	  <None Remove="Models\" />
 	</ItemGroup>
 	<ItemGroup>
 	  <Folder Include="Platforms\Android\" />
@@ -43,6 +44,7 @@
 	  <Folder Include="Platforms\Windows\" />
 	  <Folder Include="Views\" />
 	  <Folder Include="ViewModels\" />
+	  <Folder Include="Models\" />
 	</ItemGroup>
 	<ItemGroup>
 	  <ProjectReference Include="..\Decaf.Utilities\Decaf.Utility.csproj" />
