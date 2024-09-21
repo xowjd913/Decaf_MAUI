@@ -40,15 +40,6 @@
                         </DataTemplate>
                     </CollectionView.ItemTemplate>
                 </CollectionView>
-                <!--<template:OnBoardingCheckBoxControl Text="3잔 이상"
-                                                    IsChecked="True"/>
-
-                <template:OnBoardingCheckBoxControl Text="1잔"
-                                                    IsChecked="False"/>
-
-                <template:OnBoardingCheckBoxControl Text="아예 못 마심"
-                                                    IsChecked="False"/>-->
-
                 <BoxView VerticalOptions="FillAndExpand"/>
 
         </VerticalStackLayout>
