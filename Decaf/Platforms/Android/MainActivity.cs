@@ -15,6 +15,11 @@ namespace Decaf
             {
                 Window?.SetStatusBarColor(Android.Graphics.Color.White);
             }
+
+            if (Build.VERSION.SdkInt >= BuildVersionCodes.M)
+            {
+                Window.DecorView.SystemUiFlags = Android.Views.SystemUiFlags.LightStatusBar;
+            }
         }
     }
 }

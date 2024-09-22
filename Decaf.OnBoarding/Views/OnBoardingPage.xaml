@@ -17,6 +17,7 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
 
             <BoxView HeightRequest="10"
@@ -42,9 +43,21 @@
                     <BoxView HorizontalOptions="FillAndExpand"
                              BackgroundColor="Transparent"/>
 
-                    <BoxView BackgroundColor="Green"
-                             WidthRequest="20"
-                             HeightRequest="20"/>
+                    <template:CircleProgressBar HeightRequest="20"
+                                                WidthRequest="20"
+
+                                                BackgroundColor="#EFEDEA"
+                                                Color="#557705"
+
+                                                Progress="{Binding CircleProgressPercent}"
+
+                                                Thickness="3"
+
+                                                IsIndeterminate="False"
+                                                Smooth="True"
+
+                                                StrokeLineCap="Round"/>
+
                 </StackLayout>
 
                 <CarouselView ItemsSource="{Binding SurveyPages}"
@@ -57,20 +70,44 @@
 
                     <CarouselView.ItemTemplate>
                         <DataTemplate>
-                            <StackLayout VerticalOptions="FillAndExpand"
-                                         HorizontalOptions="FillAndExpand">
+                            <VerticalStackLayout VerticalOptions="FillAndExpand"
+                                                 HorizontalOptions="FillAndExpand">
+
                                 <Label Text="{Binding Title}"
                                         FontSize="28"
                                         Margin="0, 40, 0, 24"/>
-                                <CollectionView ItemsSource="{Binding Surveys}">
-                                    <CollectionView.ItemTemplate>
-                                        <DataTemplate>
-                                            <template:OnBoardingCheckBoxControl Text="{Binding Text}"
-                                                                                IsChecked="{Binding IsChecked, Mode=TwoWay}"/>
-                                        </DataTemplate>
-                                    </CollectionView.ItemTemplate>
-                                </CollectionView>
-                            </StackLayout>
+                                <VerticalStackLayout>
+                                    <CollectionView ItemsSource="{Binding Surveys}"
+                                                    VerticalOptions="FillAndExpand"
+                                                    ItemsLayout="VerticalList"
+                                                    RemainingItemsThreshold="4">
+                                        <CollectionView.EmptyView>
+                                            <ContentView>
+                                               <StackLayout HorizontalOptions="CenterAndExpand"
+                                                             VerticalOptions="CenterAndExpand">
+                                                    <Label Text="No results matched your filter."
+                                                           Margin="10,25,10,10"
+                                                           FontAttributes="Bold"
+                                                           FontSize="18"
+                                                           HorizontalOptions="Fill"
+                                                           HorizontalTextAlignment="Center" />
+                                                    <Label Text="Try a broader filter?"
+                                                           FontAttributes="Italic"
+                                                           FontSize="12"
+                                                           HorizontalOptions="Fill"
+                                                           HorizontalTextAlignment="Center" />
+                                                </StackLayout>
+                                            </ContentView>
+                                        </CollectionView.EmptyView>
+                                        <CollectionView.ItemTemplate>
+                                            <DataTemplate>
+                                                <template:OnBoardingCheckBoxControl Text="{Binding Text}"
+                                                                                    IsChecked="{Binding IsChecked, Mode=TwoWay}"/>
+                                            </DataTemplate>
+                                        </CollectionView.ItemTemplate>
+                                    </CollectionView>
+                                </VerticalStackLayout>
+                            </VerticalStackLayout>
                         </DataTemplate>
                     </CarouselView.ItemTemplate>
                 </CarouselView>
@@ -79,12 +116,22 @@
 
         <BoxView Grid.Row="2"
                  BackgroundColor="Transparent"/>
-
         <Button Grid.Row="3"
+
+                Margin="0, 0, 0, 1"
+
+                IsVisible="{Binding IsVisibleResetSurveyButton}"
+
+                BackgroundColor="Transparent"
+                Text="다시 설정하기"
+
+                TextColor="#61635D"
+                FontSize="14"/>
+        <Button Grid.Row="4"
 
                 Command="{Binding OnNextSurveyPageButtonClickCommand}"
 
-                Text="Next"
+                Text="{Binding NextPageButtonContent}"
 
                 BackgroundColor="#557705"
 

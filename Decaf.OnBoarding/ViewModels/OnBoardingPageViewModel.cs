@@ -31,6 +31,17 @@ namespace Decaf.OnBoarding.ViewModels
             }
         }
 
+        private string nextPageButtonContent;
+        public string NextPageButtonContent
+        {
+            get => nextPageButtonContent;
+            set
+            {
+                nextPageButtonContent = value;
+                OnPropertyChanged(new(nameof(NextPageButtonContent)));
+            }
+        }
+
         private bool isVisibleBackButton;
         public bool IsVisibleBackButton
         {
@@ -39,6 +50,28 @@ namespace Decaf.OnBoarding.ViewModels
             {
                 isVisibleBackButton = value;
                 OnPropertyChanged(new(nameof(IsVisibleBackButton)));
+            }
+        }
+
+        private bool isVisibleResetSurveyButton;
+        public bool IsVisibleResetSurveyButton
+        {
+            get => isVisibleResetSurveyButton;
+            set
+            {
+                isVisibleResetSurveyButton = value;
+                OnPropertyChanged(new(nameof(IsVisibleResetSurveyButton)));
+            }
+        }
+
+        private float circleProgressPercent;
+        public float CircleProgressPercent
+        {
+            get => circleProgressPercent;
+            set
+            {
+                circleProgressPercent = value;
+                OnPropertyChanged(new(nameof(CircleProgressPercent)));
             }
         }
 
@@ -53,6 +86,8 @@ namespace Decaf.OnBoarding.ViewModels
 
             OnNextSurveyPageButtonClickCommand = new Command(OnNextSurveyPageButtonClick);
             OnPrevSurveyPageButtonClickCommand = new Command(OnPrevSurveyPageButtonClick);
+
+            NextPageButtonContent = "다음";
         }
 
 
@@ -63,7 +98,13 @@ namespace Decaf.OnBoarding.ViewModels
                 return;
 
             CurrentPage++;
+
             IsVisibleBackButton = CurrentPage != 0;
+            IsVisibleResetSurveyButton = CurrentPage == SurveyPages.Count - 1;
+
+            CircleProgressPercent = (float)CurrentPage / (SurveyPages.Count - 1);
+
+            NextPageButtonContent = "다음";
         }
         private void OnPrevSurveyPageButtonClick()
         {
@@ -71,7 +112,13 @@ namespace Decaf.OnBoarding.ViewModels
                 return;
 
             CurrentPage--;
+
             IsVisibleBackButton = CurrentPage != 0;
+            IsVisibleResetSurveyButton = CurrentPage == SurveyPages.Count - 1;
+
+            CircleProgressPercent = (float)CurrentPage / (SurveyPages.Count - 1);
+
+            NextPageButtonContent = "다음";
         }
         #endregion
 
@@ -80,8 +127,6 @@ namespace Decaf.OnBoarding.ViewModels
         {
             void OnActiveIsChecked(string text)
             {
-                Debug.WriteLine($"[L] : {text} CHECKED !!!!");
-
                 var otherSurveys = SurveyPages[CurrentPage]
                     .Surveys
                     .Where(o => o.Text.Equals(text) == false)
@@ -161,6 +206,7 @@ namespace Decaf.OnBoarding.ViewModels
                     },
                 }
             });
+            SurveyPages.Add(null);
         }
 
         #endregion

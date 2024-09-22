@@ -1,16 +1,9 @@
 ﻿<Properties StartupConfiguration="{ADF2927E-650F-4336-917C-4A8C63727DC0}|Default">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.Decaf Xamarin.HotReload.DebuggerTimeoutException.Decaf.HideInfoBar="True" PreferredExecutionTarget="Android.Pixel_3a_API_34_extension_level_7_arm64-v8a" />
   <MonoDevelop.MonoDroid LastDeploySdkVersion="34.0.113" />
-  <Xamarin.Addins.Core.Project ActiveDebugTarget="Android.Pixel_3a_API_34_extension_level_7_arm64-v8a" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench ActiveDocument="Decaf.Template/Decaf.Template.csproj">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Decaf.Template/CircleProgressBar/CircleProgressBar.xaml.cs">
     <Files>
-      <File FileName="Decaf.OnBoarding/Views/OnBoardingPage.xaml" Line="32" Column="52" />
+      <File FileName="Decaf.OnBoarding/Views/OnBoardingPage.xaml" Line="34" Column="1" />
       <File FileName="Decaf/MauiProgram.cs" />
       <File FileName="Decaf.Main/Views/MainPage.xaml.cs" />
       <File FileName="Decaf.Main/ViewModels/MainPageViewModel.cs" />
@@ -18,42 +11,49 @@
       <File FileName="Decaf/App.xaml" />
       <File FileName="Decaf.Main/Views/MainPage.xaml" />
       <File FileName="Decaf/Resources/Styles/Styles.xaml" />
-      <File FileName="Decaf.Converter/BoolToColorConverter.cs" Line="43" Column="6" />
-      <File FileName="Decaf.Template/RoundedCheckBox.xaml" Line="32" Column="47" />
-      <File FileName="Decaf.Template/RoundedCheckBox.xaml.cs" Line="26" Column="1" />
-      <File FileName="Decaf.Template/OnBoardingCheckBox/OnBoardingCheckBoxControl.xaml" Line="25" Column="41" />
-      <File FileName="Decaf.Template/OnBoardingCheckBox/OnBoardingCheckBoxControl.xaml.cs" Line="19" Column="44" />
-      <File FileName="Decaf.Template/Decaf.Template.csproj" Line="48" Column="13" />
-      <File FileName="Decaf.OnBoarding/ViewModels/OnBoardingPageViewModel.cs" Line="28" Column="1" NotebookId="1" />
+      <File FileName="Decaf.Converter/BoolToColorConverter.cs" />
+      <File FileName="Decaf.Template/OnBoardingCheckBox/OnBoardingCheckBoxControl.xaml" />
+      <File FileName="Decaf.Template/OnBoardingCheckBox/OnBoardingCheckBoxControl.xaml.cs" />
+      <File FileName="Decaf.Template/Decaf.Template.csproj" />
+      <File FileName="Decaf.OnBoarding/Decaf.OnBoarding.csproj" />
+      <File FileName="Decaf.Template/OnBoardingCheckBox/RoundedCheckBox.xaml" />
+      <File FileName="Decaf/Platforms/Android/MainActivity.cs" Line="25" Column="2" />
+      <File FileName="Decaf.Template/CircleProgressBar/CircleProgressBar.xaml" Line="39" Column="1" />
+      <File FileName="Decaf.Template/CircleProgressBar/CircleProgressBar.xaml.cs" Line="34" Column="3" />
+      <File FileName="Decaf.OnBoarding/ViewModels/OnBoardingPageViewModel.cs" Line="56" Column="10" NotebookId="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Decaf" expanded="True">
-            <Node name="Decaf" expanded="True">
-              <Node name="Resources" expanded="True">
-                <Node name="Images" expanded="True" />
+            <Node name="Decaf">
+              <Node name="Platforms" expanded="True">
+                <Node name="Android" expanded="True" />
               </Node>
             </Node>
-            <Node name="Decaf.OnBoarding" expanded="True">
-              <Node name="ViewModels" expanded="True" />
+            <Node name="Decaf.OnBoarding">
               <Node name="Views" expanded="True" />
             </Node>
-            <Node name="Decaf.Template" selected="True">
-              <Node name="OnBoardingCheckBox" expanded="True">
-                <Node name="OnBoardingCheckBoxControl.xaml" expanded="True" />
-                <Node name="RoundedCheckBox.xaml" expanded="True" />
+            <Node name="Decaf.Template" expanded="True">
+              <Node name="CircleProgressBar" expanded="True">
+                <Node name="CircleProgressBar.xaml" expanded="True">
+                  <Node name="CircleProgressBar.xaml.cs" selected="True" />
+                </Node>
               </Node>
-              <Node name="Resources" expanded="True">
-                <Node name="Images" expanded="True" />
-              </Node>
+              <Node name="OnBoardingCheckBox" expanded="True" />
             </Node>
           </Node>
         </State>
       </Pad>
-      <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State />
-      </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="Android.Pixel_3a_API_34_extension_level_7_arm64-v8a" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.Decaf Xamarin.HotReload.DebuggerTimeoutException.Decaf.HideInfoBar="True" PreferredExecutionTarget="Android.Pixel_3a_API_34_extension_level_7_arm64-v8a" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/tjkim/Desktop/GitProjects/MAUIProjects/Decaf_MAUI/Decaf.Template/CircleProgressBar/CircleProgressBar.xaml.cs" relfile="Decaf.Template/CircleProgressBar/CircleProgressBar.xaml.cs" line="18" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
 </Properties>

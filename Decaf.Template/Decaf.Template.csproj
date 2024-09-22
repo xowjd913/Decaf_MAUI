@@ -35,6 +35,7 @@
 	  <None Remove="Resources\" />
 	  <None Remove="Resources\Images\" />
 	  <None Remove="Resources\Images\check.svg" />
+	  <None Remove="CircleProgressBar\" />
 	</ItemGroup>
 	<ItemGroup>
 	  <Folder Include="Platforms\Android\" />
@@ -44,6 +45,7 @@
 	  <Folder Include="Platforms\Windows\" />
 	  <Folder Include="Resources\" />
 	  <Folder Include="Resources\Images\" />
+	  <Folder Include="CircleProgressBar\" />
 	</ItemGroup>
 	<ItemGroup>
 	  <ProjectReference Include="..\Decaf.Converter\Decaf.Converter.csproj" />
@@ -52,6 +54,6 @@
 	  <BundleResource Include="Resources\Images\check.svg" />
 	</ItemGroup>
 	<ItemGroup>
-		<MauiImage Include="Resources\Images\check.svg"/>
+		<MauiImage Include="Resources\Images\check.svg" />
 	</ItemGroup>
 </Project>
