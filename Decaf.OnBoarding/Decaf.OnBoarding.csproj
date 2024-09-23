@@ -22,8 +22,8 @@
 	  <CreatePackage>false</CreatePackage>
 	</PropertyGroup>
 	<ItemGroup>
-		<PackageReference Include="Microsoft.Maui.Controls" Version="8.0.82" />
-		<PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="8.0.82" />
+		<PackageReference Include="Microsoft.Maui.Controls" Version="8.0.90" />
+		<PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="8.0.90" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -38,6 +38,10 @@
 	  <None Remove="Resources\" />
 	  <None Remove="Resources\Images\" />
 	  <None Remove="Resources\Images\back_page_button.svg" />
+	  <None Remove="Selector\" />
+	  <None Remove="Resources\Images\check_circle_fill.svg" />
+	  <None Remove="Resources\Images\fire_cracker.svg" />
+	  <None Remove="Resources\Images\coffee_circle_fill.svg" />
 	</ItemGroup>
 	<ItemGroup>
 	  <Folder Include="Platforms\Android\" />
@@ -50,6 +54,7 @@
 	  <Folder Include="Models\" />
 	  <Folder Include="Resources\" />
 	  <Folder Include="Resources\Images\" />
+	  <Folder Include="Selector\" />
 	</ItemGroup>
 	<ItemGroup>
 	  <ProjectReference Include="..\Decaf.Utilities\Decaf.Utility.csproj" />
@@ -59,8 +64,15 @@
 	</ItemGroup>
 	<ItemGroup>
 	  <BundleResource Include="Resources\Images\back_page_button.svg" />
+	  <BundleResource Include="Resources\Images\check_circle_fill.svg" />
+	  <BundleResource Include="Resources\Images\fire_cracker.svg" />
+	  <BundleResource Include="Resources\Images\coffee_circle_fill.svg" />
 	</ItemGroup>
 	<ItemGroup>
-		<MauiImage Include="Resources\Images\back_page_button.svg"/>
+		<MauiImage Include="Resources\Images\back_page_button.svg" />
+		
+		<MauiImage Include="Resources\Images\check_circle_fill.svg" />
+		<MauiImage Include="Resources\Images\fire_cracker.svg" />
+		<MauiImage Include="Resources\Images\coffee_circle_fill.svg" />
 	</ItemGroup>
 </Project>

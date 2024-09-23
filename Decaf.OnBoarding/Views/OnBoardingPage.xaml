@@ -4,6 +4,8 @@
 
              xmlns:base="clr-namespace:Decaf.Base.MVVM;assembly=Decaf.Base"
              xmlns:template="clr-namespace:Decaf.Template;assembly=Decaf.Template"
+             xmlns:selector="clr-namespace:Decaf.OnBoarding.Selector"
+             xmlns:viewmodel="clr-namespace:Decaf.OnBoarding.ViewModels"
 
              x:Class="Decaf.OnBoarding.Views.OnBoardingPage"
              
@@ -11,26 +13,96 @@
 
              Title="OnBoardingPage">
 
+    <base:ContentPageBase.Resources>
+        <DataTemplate x:Key="StandardPageTemplate">
+            <VerticalStackLayout VerticalOptions="FillAndExpand"
+                                 HorizontalOptions="FillAndExpand">
+
+                <Label Text="{Binding Title}"
+                        FontSize="28"
+                        Margin="0, 40, 0, 24"/>
+                <VerticalStackLayout>
+                    <CollectionView ItemsSource="{Binding Surveys}"
+                                    VerticalOptions="FillAndExpand"
+                                    ItemsLayout="VerticalList"
+                                    RemainingItemsThreshold="4">
+                        <CollectionView.ItemTemplate>
+                            <DataTemplate>
+                                <template:OnBoardingCheckBoxControl Text="{Binding Text}"
+                                                                    IsChecked="{Binding IsChecked, Mode=TwoWay}"/>
+                            </DataTemplate>
+                        </CollectionView.ItemTemplate>
+                    </CollectionView>
+                </VerticalStackLayout>
+            </VerticalStackLayout>
+        </DataTemplate>
+
+        <DataTemplate x:Key="FinalPageTemplate">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+
+                <BoxView Grid.Row="0"
+                         HeightRequest="168"
+                         BackgroundColor="Transparent"/>
+
+                <VerticalStackLayout Grid.Row="1">
+                    <Image Source="Resources/Images/fire_cracker"/>
+                    <Image Source="Resource/Images/coffee_circle_fill"
+                           Margin="0, -30, 0, 0"/>
+                </VerticalStackLayout>
+
+                <BoxView Grid.Row="2"
+                         HeightRequest="28"
+                         BackgroundColor="Transparent"/>
+
+                <Label Grid.Row="3"
+                       HorizontalTextAlignment="Center"
+                       FontSize="24">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="하루 카페인 섭취량을&#10;"
+                                  TextColor="#212121"/>
+                            <Span Text="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:OnBoardingPageViewModel}}, Path=LastSurveyPageCaffeineContent}"
+                                  TextColor="#557705"/>
+                            <Span Text="로 추천드립니다."
+                                  TextColor="#212121"/>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+            </Grid>
+        </DataTemplate>
+    </base:ContentPageBase.Resources>
+
     <Grid Margin="24, 0, 24, 28">
         <Grid.RowDefinitions>
-            <RowDefinition Height="10"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
 
-            <BoxView HeightRequest="10"
-                     Grid.Row="0"
+            <BoxView Grid.Row="0"
+                     HeightRequest="10"
                      BackgroundColor="Transparent"/>
 
-            <VerticalStackLayout x:Name="verticalRoot"
+            <Grid x:Name="verticalRoot"
 
-                                 Grid.Row="1"
+                  Grid.Row="1"
 
-                                 VerticalOptions="FillAndExpand">
+                  VerticalOptions="FillAndExpand">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
 
-                <StackLayout Orientation="Horizontal"
+                <StackLayout Grid.Row="0"
+                             Orientation="Horizontal"
                              HeightRequest="20">
 
                     <ImageButton Source="Resources/Images/back_page_button"
@@ -56,63 +128,33 @@
                                                 IsIndeterminate="False"
                                                 Smooth="True"
 
+                                                IsVisible="{Binding IsVisibleCircleProgress}"
+
                                                 StrokeLineCap="Round"/>
+                    <Image Source="Resources/Images/check_circle_fill"
+                           WidthRequest="23"
+                           HeightRequest="23"
+
+                           IsVisible="{Binding IsVisibleFinalPageCheckImage}"/>
 
                 </StackLayout>
 
-                <CarouselView ItemsSource="{Binding SurveyPages}"
+                <CarouselView Grid.Row="1"
+                              ItemsSource="{Binding SurveyPages}"
                               Position="{Binding CurrentPage}"
                               IsSwipeEnabled="False"
+
                               Loop="False"
 
                               VerticalOptions="FillAndExpand"
                               HorizontalOptions="FillAndExpand">
-
                     <CarouselView.ItemTemplate>
-                        <DataTemplate>
-                            <VerticalStackLayout VerticalOptions="FillAndExpand"
-                                                 HorizontalOptions="FillAndExpand">
-
-                                <Label Text="{Binding Title}"
-                                        FontSize="28"
-                                        Margin="0, 40, 0, 24"/>
-                                <VerticalStackLayout>
-                                    <CollectionView ItemsSource="{Binding Surveys}"
-                                                    VerticalOptions="FillAndExpand"
-                                                    ItemsLayout="VerticalList"
-                                                    RemainingItemsThreshold="4">
-                                        <CollectionView.EmptyView>
-                                            <ContentView>
-                                               <StackLayout HorizontalOptions="CenterAndExpand"
-                                                             VerticalOptions="CenterAndExpand">
-                                                    <Label Text="No results matched your filter."
-                                                           Margin="10,25,10,10"
-                                                           FontAttributes="Bold"
-                                                           FontSize="18"
-                                                           HorizontalOptions="Fill"
-                                                           HorizontalTextAlignment="Center" />
-                                                    <Label Text="Try a broader filter?"
-                                                           FontAttributes="Italic"
-                                                           FontSize="12"
-                                                           HorizontalOptions="Fill"
-                                                           HorizontalTextAlignment="Center" />
-                                                </StackLayout>
-                                            </ContentView>
-                                        </CollectionView.EmptyView>
-                                        <CollectionView.ItemTemplate>
-                                            <DataTemplate>
-                                                <template:OnBoardingCheckBoxControl Text="{Binding Text}"
-                                                                                    IsChecked="{Binding IsChecked, Mode=TwoWay}"/>
-                                            </DataTemplate>
-                                        </CollectionView.ItemTemplate>
-                                    </CollectionView>
-                                </VerticalStackLayout>
-                            </VerticalStackLayout>
-                        </DataTemplate>
+                        <selector:OnBoardingPageTemplateSelector StandardPageTemplate="{StaticResource StandardPageTemplate}"
+                                                                 FinalPageTemplate="{StaticResource FinalPageTemplate}"/>
                     </CarouselView.ItemTemplate>
                 </CarouselView>
 
-        </VerticalStackLayout>
+        </Grid>
 
         <BoxView Grid.Row="2"
                  BackgroundColor="Transparent"/>
@@ -121,6 +163,8 @@
                 Margin="0, 0, 0, 1"
 
                 IsVisible="{Binding IsVisibleResetSurveyButton}"
+
+                Command="{Binding OnRestartSurveyButtonClickCommand}"
 
                 BackgroundColor="Transparent"
                 Text="다시 설정하기"

@@ -14,6 +14,7 @@ namespace Decaf.OnBoarding.ViewModels
         #region [ Command ]
         public ICommand OnNextSurveyPageButtonClickCommand { get; private set; }
         public ICommand OnPrevSurveyPageButtonClickCommand { get; private set; }
+        public ICommand OnRestartSurveyButtonClickCommand { get; private set; }
         #endregion
 
         #region [ Properties ]
@@ -75,6 +76,39 @@ namespace Decaf.OnBoarding.ViewModels
             }
         }
 
+        private bool isVisibleCircleProgress;
+        public bool IsVisibleCircleProgress
+        {
+            get => isVisibleCircleProgress;
+            set
+            {
+                isVisibleCircleProgress = value;
+                OnPropertyChanged(new(nameof(IsVisibleCircleProgress)));
+            }
+        }
+
+        private bool isVisibleFinalPageCheckImage;
+        public bool IsVisibleFinalPageCheckImage
+        {
+            get => isVisibleFinalPageCheckImage;
+            set
+            {
+                isVisibleFinalPageCheckImage = value;
+                OnPropertyChanged(new(nameof(IsVisibleFinalPageCheckImage)));
+            }
+        }
+
+        private string lastSurveyPageCaffeineContent;
+        public string LastSurveyPageCaffeineContent
+        {
+            get => lastSurveyPageCaffeineContent;
+            set
+            {
+                lastSurveyPageCaffeineContent = value;
+                OnPropertyChanged(new(nameof(LastSurveyPageCaffeineContent)));
+            }
+        }
+
         public OnBoardingPageViewModel(
                 INavigationService navigationService
             )
@@ -82,16 +116,46 @@ namespace Decaf.OnBoarding.ViewModels
         {
             Debug.WriteLine($"[{nameof(OnBoardingPageViewModel)}] [L] : Initialize....");
 
+            IsVisibleCircleProgress = true;
+
             CreateOnBoardingSurveyPages();
 
             OnNextSurveyPageButtonClickCommand = new Command(OnNextSurveyPageButtonClick);
             OnPrevSurveyPageButtonClickCommand = new Command(OnPrevSurveyPageButtonClick);
+            OnRestartSurveyButtonClickCommand = new Command(OnRestartSurveyButtonClick);
 
             NextPageButtonContent = "다음";
+
+
         }
 
 
         #region [ Command sources ]
+        private void OnRestartSurveyButtonClick()
+        {
+            foreach (var surveyPage in SurveyPages)
+            {
+                if (surveyPage.Surveys != null)
+                {
+                    foreach (var surveyContent in surveyPage.Surveys)
+                    {
+                        if (surveyContent)
+                            surveyContent.IsChecked = false;
+                    }
+                }
+            }
+
+            CurrentPage = 0;
+            IsVisibleBackButton = false;
+            IsVisibleResetSurveyButton = false;
+            IsVisibleFinalPageCheckImage = false;
+
+            IsVisibleCircleProgress = true;
+
+            CircleProgressPercent = 0;
+
+            NextPageButtonContent = "다음";
+        }
         private void OnNextSurveyPageButtonClick()
         {
             if (CurrentPage == SurveyPages.Count - 1)
@@ -99,12 +163,20 @@ namespace Decaf.OnBoarding.ViewModels
 
             CurrentPage++;
 
+            var isLastPage = CurrentPage == SurveyPages.Count - 1;
+
+            IsVisibleResetSurveyButton = isLastPage;
+            IsVisibleFinalPageCheckImage = isLastPage;
+            IsVisibleCircleProgress = !isLastPage;
             IsVisibleBackButton = CurrentPage != 0;
-            IsVisibleResetSurveyButton = CurrentPage == SurveyPages.Count - 1;
 
             CircleProgressPercent = (float)CurrentPage / (SurveyPages.Count - 1);
 
-            NextPageButtonContent = "다음";
+            NextPageButtonContent = isLastPage ? "완료"
+                                               : "다음";
+
+            //TEST Caffeine..
+            LastSurveyPageCaffeineContent = "200mg";
         }
         private void OnPrevSurveyPageButtonClick()
         {
@@ -113,12 +185,17 @@ namespace Decaf.OnBoarding.ViewModels
 
             CurrentPage--;
 
+            var isLastPage = CurrentPage == SurveyPages.Count - 1;
+
+            IsVisibleResetSurveyButton = isLastPage;
+            IsVisibleFinalPageCheckImage = isLastPage;
+            IsVisibleCircleProgress = !isLastPage;
             IsVisibleBackButton = CurrentPage != 0;
-            IsVisibleResetSurveyButton = CurrentPage == SurveyPages.Count - 1;
 
             CircleProgressPercent = (float)CurrentPage / (SurveyPages.Count - 1);
 
-            NextPageButtonContent = "다음";
+            NextPageButtonContent = isLastPage ? "완료"
+                                               : "다음";
         }
         #endregion
 
@@ -140,7 +217,7 @@ namespace Decaf.OnBoarding.ViewModels
 
             SurveyPages = new ObservableCollection<OnBoardingSurveyPage>();
 
-            SurveyPages.Add(new OnBoardingSurveyPage()
+            SurveyPages.Add(new OnBoardingSurveyPage(false)
             {
                 Title = "커피를 하루에 몇 잔\n드시나요?",
                 Surveys = new ObservableCollection<OnBoardingSurvey>()
@@ -162,7 +239,7 @@ namespace Decaf.OnBoarding.ViewModels
                     },
                 }
             });
-            SurveyPages.Add(new OnBoardingSurveyPage()
+            SurveyPages.Add(new OnBoardingSurveyPage(false)
             {
                 Title = "카페인을 줄이려는\n이유가 뭡니까?",
                 Surveys = new ObservableCollection<OnBoardingSurvey>()
@@ -189,7 +266,7 @@ namespace Decaf.OnBoarding.ViewModels
                     },
                 }
             });
-            SurveyPages.Add(new OnBoardingSurveyPage()
+            SurveyPages.Add(new OnBoardingSurveyPage(false)
             {
                 Title = "차(tea)를\n좋아하십니까?",
                 Surveys = new ObservableCollection<OnBoardingSurvey>()
@@ -206,7 +283,7 @@ namespace Decaf.OnBoarding.ViewModels
                     },
                 }
             });
-            SurveyPages.Add(null);
+            SurveyPages.Add(new OnBoardingSurveyPage(true));
         }
 
         #endregion

@@ -31,6 +31,9 @@ namespace Decaf.OnBoarding.Models
 			}
 		}
 
+		public static implicit operator bool(OnBoardingSurvey o)
+			=> o != null;
+
 		private Action<string> onActiveIsChecked;
 
 		public OnBoardingSurvey(Action<string> onActiveIsChecked)
