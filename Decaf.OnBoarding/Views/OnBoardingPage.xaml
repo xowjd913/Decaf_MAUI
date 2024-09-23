@@ -6,6 +6,7 @@
              xmlns:template="clr-namespace:Decaf.Template;assembly=Decaf.Template"
              xmlns:selector="clr-namespace:Decaf.OnBoarding.Selector"
              xmlns:viewmodel="clr-namespace:Decaf.OnBoarding.ViewModels"
+             xmlns:triggeraction="clr-namespace:Decaf.Utility.TriggerActions;assembly=Decaf.Utility"
 
              x:Class="Decaf.OnBoarding.Views.OnBoardingPage"
              
@@ -51,7 +52,15 @@
                          BackgroundColor="Transparent"/>
 
                 <VerticalStackLayout Grid.Row="1">
-                    <Image Source="Resources/Images/fire_cracker"/>
+                    <Image Source="Resources/Images/fire_cracker">
+                        <Image.Triggers>
+                            <DataTrigger TargetType="Image" Binding="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:OnBoardingPageViewModel}}, Path=IsVisibleFinalPageCheckImage}" Value="True">
+                                <DataTrigger.EnterActions>
+                                    <triggeraction:ScalingImageTriggerAction/>
+                                </DataTrigger.EnterActions>
+                            </DataTrigger>
+                        </Image.Triggers>
+                    </Image>
                     <Image Source="Resource/Images/coffee_circle_fill"
                            Margin="0, -30, 0, 0"/>
                 </VerticalStackLayout>

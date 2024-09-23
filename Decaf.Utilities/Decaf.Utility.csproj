@@ -36,6 +36,8 @@
 	  <None Remove="Platforms\MacCatalyst\" />
 	  <None Remove="Platforms\Tizen\" />
 	  <None Remove="Platforms\Windows\" />
+	  <None Remove="Behaviors\" />
+	  <None Remove="TriggerActions\" />
 	</ItemGroup>
 	<ItemGroup>
 	  <Folder Include="Platforms\Android\" />
@@ -43,5 +45,7 @@
 	  <Folder Include="Platforms\MacCatalyst\" />
 	  <Folder Include="Platforms\Tizen\" />
 	  <Folder Include="Platforms\Windows\" />
+	  <Folder Include="Behaviors\" />
+	  <Folder Include="TriggerActions\" />
 	</ItemGroup>
 </Project>

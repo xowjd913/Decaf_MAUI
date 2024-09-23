@@ -5,7 +5,16 @@ namespace Decaf.OnBoarding.Models
 {
 	public class OnBoardingSurveyPage : BindableBase
 	{
-		public bool IsFinalPage { get; private set; } = false;
+		private bool isFinalPage;
+		public bool IsFinalPage
+		{
+			get => isFinalPage;
+			set
+			{
+				isFinalPage = value;
+				OnPropertyChanged(new(nameof(IsFinalPage)));
+			}
+		}
 
 		private string title;
 		public string Title
