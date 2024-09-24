@@ -1,9 +1,11 @@
 ﻿using System;
+using System.Linq;
 using System.Collections.ObjectModel;
 using System.Diagnostics;
 using System.Windows.Input;
 using Decaf.Base.MVVM;
 using Decaf.OnBoarding.Models;
+using Decaf.Main.Views;
 
 namespace Decaf.OnBoarding.ViewModels
 {
@@ -15,12 +17,14 @@ namespace Decaf.OnBoarding.ViewModels
         public ICommand OnNextSurveyPageButtonClickCommand { get; private set; }
         public ICommand OnPrevSurveyPageButtonClickCommand { get; private set; }
         public ICommand OnRestartSurveyButtonClickCommand { get; private set; }
+        public ICommand OnSurveyValueChangedCommand { get; private set; }
         #endregion
-
-        #region [ Properties ]
+        
+        #region [ Collections ]
         public ObservableCollection<OnBoardingSurveyPage> SurveyPages { get; private set; }
         #endregion
 
+        #region [ Properties ]
         private int currentPage;
         public int CurrentPage
         {
@@ -109,6 +113,19 @@ namespace Decaf.OnBoarding.ViewModels
             }
         }
 
+        private bool isEnableNextButton;
+        public bool IsEnableNextButton
+        {
+            get => isEnableNextButton;
+            set
+            {
+                isEnableNextButton = value;
+                OnPropertyChanged(new(nameof(IsEnableNextButton)));
+            }
+        }
+
+        #endregion
+
         public OnBoardingPageViewModel(
                 INavigationService navigationService
             )
@@ -120,17 +137,19 @@ namespace Decaf.OnBoarding.ViewModels
 
             CreateOnBoardingSurveyPages();
 
-            OnNextSurveyPageButtonClickCommand = new Command(OnNextSurveyPageButtonClick);
+            OnNextSurveyPageButtonClickCommand = new Command(async () => await OnNextSurveyPageButtonClickAsync());
             OnPrevSurveyPageButtonClickCommand = new Command(OnPrevSurveyPageButtonClick);
             OnRestartSurveyButtonClickCommand = new Command(OnRestartSurveyButtonClick);
+            OnSurveyValueChangedCommand = new Command(OnSurveyValueChanged);
 
             NextPageButtonContent = "다음";
-
-
         }
 
-
         #region [ Command sources ]
+        private void OnSurveyValueChanged()
+        {
+            IsEnableNextButton = IsCheckedSurveyInCurrentPage();
+        }
         private void OnRestartSurveyButtonClick()
         {
             foreach (var surveyPage in SurveyPages)
@@ -152,31 +171,40 @@ namespace Decaf.OnBoarding.ViewModels
 
             IsVisibleCircleProgress = true;
 
+            IsEnableNextButton = false;
+
             CircleProgressPercent = 0;
 
             NextPageButtonContent = "다음";
         }
-        private void OnNextSurveyPageButtonClick()
+        private async Task OnNextSurveyPageButtonClickAsync()
         {
             if (CurrentPage == SurveyPages.Count - 1)
-                return;
+            {
+                await NavigationService.NavigateAsync("/" + nameof(NavigationPage) + "/" + nameof(MainPage));
+            }
+            else
+            {
+                CurrentPage++;
 
-            CurrentPage++;
+                var isLastPage = CurrentPage == SurveyPages.Count - 1;
 
-            var isLastPage = CurrentPage == SurveyPages.Count - 1;
+                IsVisibleResetSurveyButton = isLastPage;
+                IsVisibleFinalPageCheckImage = isLastPage;
+                IsVisibleCircleProgress = !isLastPage;
+                IsVisibleBackButton = CurrentPage != 0;
 
-            IsVisibleResetSurveyButton = isLastPage;
-            IsVisibleFinalPageCheckImage = isLastPage;
-            IsVisibleCircleProgress = !isLastPage;
-            IsVisibleBackButton = CurrentPage != 0;
+                IsEnableNextButton = isLastPage ? true
+                                                : IsCheckedSurveyInCurrentPage();
 
-            CircleProgressPercent = (float)CurrentPage / (SurveyPages.Count - 1);
+                CircleProgressPercent = (float)CurrentPage / (SurveyPages.Count - 1);
 
-            NextPageButtonContent = isLastPage ? "완료"
-                                               : "다음";
+                NextPageButtonContent = isLastPage ? "완료"
+                                                   : "다음";
 
-            //TEST Caffeine..
-            LastSurveyPageCaffeineContent = "200mg";
+                //TEST Caffeine..
+                LastSurveyPageCaffeineContent = "200mg";
+            }
         }
         private void OnPrevSurveyPageButtonClick()
         {
@@ -192,6 +220,9 @@ namespace Decaf.OnBoarding.ViewModels
             IsVisibleCircleProgress = !isLastPage;
             IsVisibleBackButton = CurrentPage != 0;
 
+            IsEnableNextButton = isLastPage ? true
+                                            : IsCheckedSurveyInCurrentPage();
+
             CircleProgressPercent = (float)CurrentPage / (SurveyPages.Count - 1);
 
             NextPageButtonContent = isLastPage ? "완료"
@@ -200,6 +231,20 @@ namespace Decaf.OnBoarding.ViewModels
         #endregion
 
         #region [ Private methods ]
+        private bool IsCheckedSurveyInCurrentPage()
+        {
+            var currentSurveyPage = SurveyPages[CurrentPage];
+            if (currentSurveyPage && currentSurveyPage.Surveys != null)
+            {
+                return currentSurveyPage
+                    .Surveys
+                    .Where(o => o.IsChecked == true)
+                    .Count() > 0;
+            }
+            else
+                return false;
+        }
+
         private void CreateOnBoardingSurveyPages()
         {
             void OnActiveIsChecked(string text)

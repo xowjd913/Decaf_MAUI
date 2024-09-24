@@ -46,7 +46,7 @@
 		<MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appiconfg.svg" Color="#512BD4" />
 
 		<!-- Splash Screen -->
-		<MauiSplashScreen Include="Resources\Splash\splash.svg" Color="#512BD4" BaseSize="128,128" />
+		<MauiSplashScreen Include="Resources\Splash\splash_logo.svg" Color="#557705" BaseSize="130,128" Resize="False"/>
 
 		<!-- Images -->
 		<MauiImage Include="Resources\Images\*" />
@@ -70,5 +70,27 @@
 	<ItemGroup>
 	  <ProjectReference Include="..\Decaf.Main\Decaf.Main.csproj" />
 	  <ProjectReference Include="..\Decaf.OnBoarding\Decaf.OnBoarding.csproj" />
+	</ItemGroup>
+	<ItemGroup>
+	  <None Remove="Resources\Fonts\SUIT-Bold.ttf" />
+	  <None Remove="Resources\Fonts\SUIT-ExtraBold.ttf" />
+	  <None Remove="Resources\Fonts\SUIT-ExtraLight.ttf" />
+	  <None Remove="Resources\Fonts\SUIT-Heavy.ttf" />
+	  <None Remove="Resources\Fonts\SUIT-Light.ttf" />
+	  <None Remove="Resources\Fonts\SUIT-Medium.ttf" />
+	  <None Remove="Resources\Fonts\SUIT-Regular.ttf" />
+	  <None Remove="Resources\Fonts\SUIT-SemiBold.ttf" />
+	  <None Remove="Resources\Splash\splash_logo.svg" />
+	</ItemGroup>
+	<ItemGroup>
+	  <BundleResource Include="Resources\Fonts\SUIT-Bold.ttf" />
+	  <BundleResource Include="Resources\Fonts\SUIT-ExtraBold.ttf" />
+	  <BundleResource Include="Resources\Fonts\SUIT-ExtraLight.ttf" />
+	  <BundleResource Include="Resources\Fonts\SUIT-Heavy.ttf" />
+	  <BundleResource Include="Resources\Fonts\SUIT-Light.ttf" />
+	  <BundleResource Include="Resources\Fonts\SUIT-Medium.ttf" />
+	  <BundleResource Include="Resources\Fonts\SUIT-Regular.ttf" />
+	  <BundleResource Include="Resources\Fonts\SUIT-SemiBold.ttf" />
+	  <BundleResource Include="Resources\Splash\splash_logo.svg" />
 	</ItemGroup>
 </Project>

@@ -19,6 +19,15 @@ namespace Decaf
                 {
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
+
+                    fonts.AddFont("SUIT-ExtraLight.ttf", "Suit_200");
+                    fonts.AddFont("SUIT-Light.ttf", "Suit_300");
+                    fonts.AddFont("SUIT-Regular.ttf", "Suit_400");
+                    fonts.AddFont("SUIT-Medium.ttf", "Suit_500");
+                    fonts.AddFont("SUIT-SemiBold.ttf", "Suit_600");
+                    fonts.AddFont("SUIT-Bold.ttf", "Suit_700");
+                    fonts.AddFont("SUIT-ExtraBold.ttf", "Suit_800");
+                    fonts.AddFont("SUIT-Heavy.ttf", "Suit_900");
                 })
                 .UsePrism(prism => 
                 {

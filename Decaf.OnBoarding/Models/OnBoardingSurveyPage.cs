@@ -38,6 +38,9 @@ namespace Decaf.OnBoarding.Models
 			}
 		}
 
+		public static implicit operator bool(OnBoardingSurveyPage o)
+			=> o != null;
+
 
 		public OnBoardingSurveyPage(bool isFinalPage)
 		{

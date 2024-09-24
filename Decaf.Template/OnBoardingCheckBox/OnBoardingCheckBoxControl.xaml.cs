@@ -1,4 +1,5 @@
 ﻿using System.Diagnostics;
+using System.Windows.Input;
 
 namespace Decaf.Template;
 
@@ -22,13 +23,26 @@ public partial class OnBoardingCheckBoxControl : ContentView
 		set => SetValue(IsCheckedProperty, value);
 	}
 
+	public static readonly BindableProperty OnValueChangedCommandProperty
+		= BindableProperty.Create(nameof(OnValueChangedCommand), typeof(ICommand), typeof(OnBoardingCheckBoxControl), null);
+
+	public ICommand OnValueChangedCommand
+	{
+		get => (ICommand)GetValue(OnValueChangedCommandProperty);
+		set
+		{
+			SetValue(OnValueChangedCommandProperty, value);
+		}
+	}
+
 	public OnBoardingCheckBoxControl()
 		=> InitializeComponent();
 
 
     private void OnCheckBoxTapped(object sender, TappedEventArgs e)
     {
-        Debug.WriteLine("[L] : OnCheckBoxTAP !!!!!!");
-        IsChecked = !IsChecked;
+		IsChecked = !IsChecked;
+		if (OnValueChangedCommand != null)
+            OnValueChangedCommand.Execute(null);
     }
 }

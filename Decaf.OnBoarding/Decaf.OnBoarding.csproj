@@ -61,6 +61,7 @@
 	  <ProjectReference Include="..\Decaf.Extension\Decaf.Extension.csproj" />
 	  <ProjectReference Include="..\Decaf.Base\Decaf.Base.csproj" />
 	  <ProjectReference Include="..\Decaf.Template\Decaf.Template.csproj" />
+	  <ProjectReference Include="..\Decaf.Main\Decaf.Main.csproj" />
 	</ItemGroup>
 	<ItemGroup>
 	  <BundleResource Include="Resources\Images\back_page_button.svg" />

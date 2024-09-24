@@ -35,6 +35,7 @@
                     <Label Grid.Column="0"
                             Text="{TemplateBinding Text}"
                             FontSize="16"
+                            FontFamily="Suit_500"
 
                             HorizontalTextAlignment="Start"
                             VerticalTextAlignment="Center"/>

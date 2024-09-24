@@ -12,6 +12,8 @@
              
              NavigationPage.HasNavigationBar="False"
 
+             BackgroundColor="#F8F8F8F8"
+
              Title="OnBoardingPage">
 
     <base:ContentPageBase.Resources>
@@ -20,17 +22,23 @@
                                  HorizontalOptions="FillAndExpand">
 
                 <Label Text="{Binding Title}"
-                        FontSize="28"
-                        Margin="0, 40, 0, 24"/>
+                       FontSize="28"
+                       Margin="0, 0, 0, 24"
+                       FontFamily="Suit_700"/>
                 <VerticalStackLayout>
                     <CollectionView ItemsSource="{Binding Surveys}"
                                     VerticalOptions="FillAndExpand"
-                                    ItemsLayout="VerticalList"
+
                                     RemainingItemsThreshold="4">
+                        <CollectionView.ItemsLayout>
+                            <LinearItemsLayout Orientation="Vertical"
+                                               ItemSpacing="4"/>
+                        </CollectionView.ItemsLayout>
                         <CollectionView.ItemTemplate>
                             <DataTemplate>
                                 <template:OnBoardingCheckBoxControl Text="{Binding Text}"
-                                                                    IsChecked="{Binding IsChecked, Mode=TwoWay}"/>
+                                                                    IsChecked="{Binding IsChecked, Mode=TwoWay}"
+                                                                    OnValueChangedCommand="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:OnBoardingPageViewModel}}, Path=OnSurveyValueChangedCommand}"/>
                             </DataTemplate>
                         </CollectionView.ItemTemplate>
                     </CollectionView>
@@ -75,10 +83,13 @@
                     <Label.FormattedText>
                         <FormattedString>
                             <Span Text="하루 카페인 섭취량을&#10;"
+                                  FontFamily="Suit_600"
                                   TextColor="#212121"/>
                             <Span Text="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:OnBoardingPageViewModel}}, Path=LastSurveyPageCaffeineContent}"
+                                  FontFamily="Suit_800"
                                   TextColor="#557705"/>
                             <Span Text="로 추천드립니다."
+                                  FontFamily="Suit_600"
                                   TextColor="#212121"/>
                         </FormattedString>
                     </Label.FormattedText>
@@ -106,6 +117,7 @@
 
                   VerticalOptions="FillAndExpand">
                 <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
                     <RowDefinition Height="Auto"/>
                     <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
@@ -147,8 +159,10 @@
                            IsVisible="{Binding IsVisibleFinalPageCheckImage}"/>
 
                 </StackLayout>
-
-                <CarouselView Grid.Row="1"
+                <BoxView HeightRequest="37"
+                         BackgroundColor="Transparent"
+                         Grid.Row="1"/>
+                <CarouselView Grid.Row="2"
                               ItemsSource="{Binding SurveyPages}"
                               Position="{Binding CurrentPage}"
                               IsSwipeEnabled="False"
@@ -178,6 +192,8 @@
                 BackgroundColor="Transparent"
                 Text="다시 설정하기"
 
+                FontFamily="Suit_500"
+
                 TextColor="#61635D"
                 FontSize="14"/>
         <Button Grid.Row="4"
@@ -188,7 +204,12 @@
 
                 BackgroundColor="#557705"
 
+                FontFamily="Suit_700"
+
                 CornerRadius="10"
+                HeightRequest="46"
+
+                IsEnabled="{Binding IsEnableNextButton}"
 
                 VerticalOptions="End"
                 HorizontalOptions="Fill"/>
