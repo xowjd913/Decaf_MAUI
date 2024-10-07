@@ -1,0 +1,373 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\xowjd\\Desktop\\GitProjects\\Maui\\Decaf_MAUI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EA0290C3-C092-4E8A-A972-696ECBFC5F19}|Decaf.Main\\Decaf.Main.csproj|c:\\users\\xowjd\\desktop\\gitprojects\\maui\\decaf_maui\\decaf.main\\views\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{EA0290C3-C092-4E8A-A972-696ECBFC5F19}|Decaf.Main\\Decaf.Main.csproj|solutionrelative:decaf.main\\views\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA0290C3-C092-4E8A-A972-696ECBFC5F19}|Decaf.Main\\Decaf.Main.csproj|c:\\users\\xowjd\\desktop\\gitprojects\\maui\\decaf_maui\\decaf.main\\views\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA0290C3-C092-4E8A-A972-696ECBFC5F19}|Decaf.Main\\Decaf.Main.csproj|solutionrelative:decaf.main\\views\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11458032-A55E-489B-8639-26C306C4ED0D}|Decaf.Template\\Decaf.Template.csproj|c:\\users\\xowjd\\desktop\\gitprojects\\maui\\decaf_maui\\decaf.template\\onboardingcheckbox\\onboardingcheckboxcontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{11458032-A55E-489B-8639-26C306C4ED0D}|Decaf.Template\\Decaf.Template.csproj|solutionrelative:decaf.template\\onboardingcheckbox\\onboardingcheckboxcontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11458032-A55E-489B-8639-26C306C4ED0D}|Decaf.Template\\Decaf.Template.csproj|c:\\users\\xowjd\\desktop\\gitprojects\\maui\\decaf_maui\\decaf.template\\onboardingcheckbox\\roundedcheckbox.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{11458032-A55E-489B-8639-26C306C4ED0D}|Decaf.Template\\Decaf.Template.csproj|solutionrelative:decaf.template\\onboardingcheckbox\\roundedcheckbox.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B9434B8-2409-4308-8B91-4D8AAE973FF0}|Decaf.OnBoarding\\Decaf.OnBoarding.csproj|c:\\users\\xowjd\\desktop\\gitprojects\\maui\\decaf_maui\\decaf.onboarding\\views\\onboardingpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{3B9434B8-2409-4308-8B91-4D8AAE973FF0}|Decaf.OnBoarding\\Decaf.OnBoarding.csproj|solutionrelative:decaf.onboarding\\views\\onboardingpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA0290C3-C092-4E8A-A972-696ECBFC5F19}|Decaf.Main\\Decaf.Main.csproj|c:\\users\\xowjd\\desktop\\gitprojects\\maui\\decaf_maui\\decaf.main\\decaf.main.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{EA0290C3-C092-4E8A-A972-696ECBFC5F19}|Decaf.Main\\Decaf.Main.csproj|solutionrelative:decaf.main\\decaf.main.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E639995-F89B-49CA-AA2A-3D0855701FB5}|Decaf.Extension\\Decaf.Extension.csproj|c:\\users\\xowjd\\desktop\\gitprojects\\maui\\decaf_maui\\decaf.extension\\pageextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E639995-F89B-49CA-AA2A-3D0855701FB5}|Decaf.Extension\\Decaf.Extension.csproj|solutionrelative:decaf.extension\\pageextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ADF2927E-650F-4336-917C-4A8C63727DC0}|Decaf\\Decaf.csproj|c:\\users\\xowjd\\desktop\\gitprojects\\maui\\decaf_maui\\decaf\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ADF2927E-650F-4336-917C-4A8C63727DC0}|Decaf\\Decaf.csproj|solutionrelative:decaf\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B9434B8-2409-4308-8B91-4D8AAE973FF0}|Decaf.OnBoarding\\Decaf.OnBoarding.csproj|c:\\users\\xowjd\\desktop\\gitprojects\\maui\\decaf_maui\\decaf.onboarding\\viewmodels\\onboardingpageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B9434B8-2409-4308-8B91-4D8AAE973FF0}|Decaf.OnBoarding\\Decaf.OnBoarding.csproj|solutionrelative:decaf.onboarding\\viewmodels\\onboardingpageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ADF2927E-650F-4336-917C-4A8C63727DC0}|Decaf\\Decaf.csproj|c:\\users\\xowjd\\desktop\\gitprojects\\maui\\decaf_maui\\decaf\\platforms\\android\\mainactivity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ADF2927E-650F-4336-917C-4A8C63727DC0}|Decaf\\Decaf.csproj|solutionrelative:decaf\\platforms\\android\\mainactivity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ADF2927E-650F-4336-917C-4A8C63727DC0}|Decaf\\Decaf.csproj|c:\\users\\xowjd\\desktop\\gitprojects\\maui\\decaf_maui\\decaf\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{ADF2927E-650F-4336-917C-4A8C63727DC0}|Decaf\\Decaf.csproj|solutionrelative:decaf\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ADF2927E-650F-4336-917C-4A8C63727DC0}|Decaf\\Decaf.csproj|c:\\users\\xowjd\\desktop\\gitprojects\\maui\\decaf_maui\\decaf\\platforms\\windows\\package.appxmanifest||{4D47164B-07B6-4A52-A855-728D6A2E2AA3}",
+      "RelativeMoniker": "D:0:0:{ADF2927E-650F-4336-917C-4A8C63727DC0}|Decaf\\Decaf.csproj|solutionrelative:decaf\\platforms\\windows\\package.appxmanifest||{4D47164B-07B6-4A52-A855-728D6A2E2AA3}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ADF2927E-650F-4336-917C-4A8C63727DC0}|Decaf\\Decaf.csproj|c:\\users\\xowjd\\desktop\\gitprojects\\maui\\decaf_maui\\decaf\\platforms\\windows\\app.manifest||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{ADF2927E-650F-4336-917C-4A8C63727DC0}|Decaf\\Decaf.csproj|solutionrelative:decaf\\platforms\\windows\\app.manifest||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ADF2927E-650F-4336-917C-4A8C63727DC0}|Decaf\\Decaf.csproj|c:\\users\\xowjd\\desktop\\gitprojects\\maui\\decaf_maui\\decaf\\platforms\\android\\androidmanifest.xml||{4E01A4BC-CFCF-452C-8C08-51352512D197}",
+      "RelativeMoniker": "D:0:0:{ADF2927E-650F-4336-917C-4A8C63727DC0}|Decaf\\Decaf.csproj|solutionrelative:decaf\\platforms\\android\\androidmanifest.xml||{4E01A4BC-CFCF-452C-8C08-51352512D197}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ADF2927E-650F-4336-917C-4A8C63727DC0}|Decaf\\Decaf.csproj|c:\\users\\xowjd\\desktop\\gitprojects\\maui\\decaf_maui\\decaf\\platforms\\windows\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{ADF2927E-650F-4336-917C-4A8C63727DC0}|Decaf\\Decaf.csproj|solutionrelative:decaf\\platforms\\windows\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ADF2927E-650F-4336-917C-4A8C63727DC0}|Decaf\\Decaf.csproj|c:\\users\\xowjd\\desktop\\gitprojects\\maui\\decaf_maui\\decaf\\resources\\splash\\splash_logo.svg||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{ADF2927E-650F-4336-917C-4A8C63727DC0}|Decaf\\Decaf.csproj|solutionrelative:decaf\\resources\\splash\\splash_logo.svg||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ADF2927E-650F-4336-917C-4A8C63727DC0}|Decaf\\Decaf.csproj|c:\\users\\xowjd\\desktop\\gitprojects\\maui\\decaf_maui\\decaf\\resources\\splash\\splash.svg||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{ADF2927E-650F-4336-917C-4A8C63727DC0}|Decaf\\Decaf.csproj|solutionrelative:decaf\\resources\\splash\\splash.svg||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\xowjd\\Desktop\\GitProjects\\Maui\\Decaf_MAUI\\Decaf\\obj\\Debug\\net8.0-windows10.0.19041.0\\win10-x64\\Platforms\\Windows\\App.g.i.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Decaf\\obj\\Debug\\net8.0-windows10.0.19041.0\\win10-x64\\Platforms\\Windows\\App.g.i.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11458032-A55E-489B-8639-26C306C4ED0D}|Decaf.Template\\Decaf.Template.csproj|c:\\users\\xowjd\\desktop\\gitprojects\\maui\\decaf_maui\\decaf.template\\circleprogressbar\\circleprogressbardrawable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11458032-A55E-489B-8639-26C306C4ED0D}|Decaf.Template\\Decaf.Template.csproj|solutionrelative:decaf.template\\circleprogressbar\\circleprogressbardrawable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11458032-A55E-489B-8639-26C306C4ED0D}|Decaf.Template\\Decaf.Template.csproj|c:\\users\\xowjd\\desktop\\gitprojects\\maui\\decaf_maui\\decaf.template\\circleprogressbar\\indeterminateringdrawable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11458032-A55E-489B-8639-26C306C4ED0D}|Decaf.Template\\Decaf.Template.csproj|solutionrelative:decaf.template\\circleprogressbar\\indeterminateringdrawable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\xowjd\\AppData\\Local\\Temp\\.vsdbgsrc\\4907d011a4bb571ee54ecc98c5890182451931d2\\Views_OnBoardingPage.xaml.sg.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\xowjd\\Desktop\\GitProjects\\Maui\\Decaf_MAUI\\Decaf.Main\\Views\\MainPage.xaml.cs",
+              "RelativeDocumentMoniker": "Decaf.Main\\Views\\MainPage.xaml.cs",
+              "ToolTip": "C:\\Users\\xowjd\\Desktop\\GitProjects\\Maui\\Decaf_MAUI\\Decaf.Main\\Views\\MainPage.xaml.cs",
+              "RelativeToolTip": "Decaf.Main\\Views\\MainPage.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-07T01:23:18.005Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Decaf.Main",
+              "DocumentMoniker": "C:\\Users\\xowjd\\Desktop\\GitProjects\\Maui\\Decaf_MAUI\\Decaf.Main\\Decaf.Main.csproj",
+              "RelativeDocumentMoniker": "Decaf.Main\\Decaf.Main.csproj",
+              "ToolTip": "C:\\Users\\xowjd\\Desktop\\GitProjects\\Maui\\Decaf_MAUI\\Decaf.Main\\Decaf.Main.csproj",
+              "RelativeToolTip": "Decaf.Main\\Decaf.Main.csproj",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAADIAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-10-07T01:14:54.232Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainPage.xaml",
+              "DocumentMoniker": "C:\\Users\\xowjd\\Desktop\\GitProjects\\Maui\\Decaf_MAUI\\Decaf.Main\\Views\\MainPage.xaml",
+              "RelativeDocumentMoniker": "Decaf.Main\\Views\\MainPage.xaml",
+              "ToolTip": "C:\\Users\\xowjd\\Desktop\\GitProjects\\Maui\\Decaf_MAUI\\Decaf.Main\\Views\\MainPage.xaml",
+              "RelativeToolTip": "Decaf.Main\\Views\\MainPage.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-10-07T00:16:02.628Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MauiProgram.cs",
+              "DocumentMoniker": "C:\\Users\\xowjd\\Desktop\\GitProjects\\Maui\\Decaf_MAUI\\Decaf\\MauiProgram.cs",
+              "RelativeDocumentMoniker": "Decaf\\MauiProgram.cs",
+              "ToolTip": "C:\\Users\\xowjd\\Desktop\\GitProjects\\Maui\\Decaf_MAUI\\Decaf\\MauiProgram.cs",
+              "RelativeToolTip": "Decaf\\MauiProgram.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAAwDwAAABTAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-07T00:04:29.632Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "AndroidManifest.xml",
+              "DocumentMoniker": "C:\\Users\\xowjd\\Desktop\\GitProjects\\Maui\\Decaf_MAUI\\Decaf\\Platforms\\Android\\AndroidManifest.xml",
+              "RelativeDocumentMoniker": "Decaf\\Platforms\\Android\\AndroidManifest.xml",
+              "ToolTip": "C:\\Users\\xowjd\\Desktop\\GitProjects\\Maui\\Decaf_MAUI\\Decaf\\Platforms\\Android\\AndroidManifest.xml",
+              "RelativeToolTip": "Decaf\\Platforms\\Android\\AndroidManifest.xml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2024-10-07T00:04:11.28Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "MainActivity.cs",
+              "DocumentMoniker": "C:\\Users\\xowjd\\Desktop\\GitProjects\\Maui\\Decaf_MAUI\\Decaf\\Platforms\\Android\\MainActivity.cs",
+              "RelativeDocumentMoniker": "Decaf\\Platforms\\Android\\MainActivity.cs",
+              "ToolTip": "C:\\Users\\xowjd\\Desktop\\GitProjects\\Maui\\Decaf_MAUI\\Decaf\\Platforms\\Android\\MainActivity.cs",
+              "RelativeToolTip": "Decaf\\Platforms\\Android\\MainActivity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-07T00:04:03.538Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Users\\xowjd\\Desktop\\GitProjects\\Maui\\Decaf_MAUI\\Decaf\\Platforms\\Windows\\App.xaml",
+              "RelativeDocumentMoniker": "Decaf\\Platforms\\Windows\\App.xaml",
+              "ToolTip": "C:\\Users\\xowjd\\Desktop\\GitProjects\\Maui\\Decaf_MAUI\\Decaf\\Platforms\\Windows\\App.xaml",
+              "RelativeToolTip": "Decaf\\Platforms\\Windows\\App.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-10-07T00:03:56.556Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "splash_logo.svg",
+              "DocumentMoniker": "C:\\Users\\xowjd\\Desktop\\GitProjects\\Maui\\Decaf_MAUI\\Decaf\\Resources\\Splash\\splash_logo.svg",
+              "RelativeDocumentMoniker": "Decaf\\Resources\\Splash\\splash_logo.svg",
+              "ToolTip": "C:\\Users\\xowjd\\Desktop\\GitProjects\\Maui\\Decaf_MAUI\\Decaf\\Resources\\Splash\\splash_logo.svg",
+              "RelativeToolTip": "Decaf\\Resources\\Splash\\splash_logo.svg",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKMSURBVDhPjZNLSFRhFMd/3507M/dKPsacsYelWGZZFFJRkdSmNrUoatMiKggSN2YFEUX3MvQiiBYWtFAyggoXPSGyhQuhFrXQFr7GMFOowcZMUO9MM3pPi9Eao6gf/Bcfh3PO/5yPo8jAsqxI5vtvKKXuhMPhK4jInIBlWRH5Bw0NDYOWZUVs264B0DILKEUXCCIpZOIi7uetpHpCxN8GiffU4rrThEIhXzgcXiEidbZtH/5ZQKTV\u002B72oItjSYfG5vxwneoX2/iW80dvxb4ji9D4BIBAIeBsbG4fSOXJWzSR7qpt9D\u002BvWndpTlNXL2HCQ28PXaIuVEB2Dmsp8DiZqyN35FAFiw19IJpPcbmrq0wCq7\u002BvHd5Y\u002B2rMy5y3OcBXmqtccq9rB/uUFKI/GzfZRPhRdBhEQIRgKUlxSAoAm0uqtWNB5Yu\u002Bier5\u002BWOoWbnxAwAwQzDao3lLIobX5ePxemiImroCIzFm\u002BztT7/CPLzi8ej\u002BVxdeyu1nJjgMR3FwDl0fD4dJRHozuWACStjM/TGDlZ50tNqHuxejo\u002B\u002BZPL8wwqCvxUFPhZFfBSbIBMJti0wJjpDpJRQXfjzr6uj9u\u002BtYysCWijA4OPqzeXpVLJtE010zS9cZDM1DTa9ASLmoaOnh4cEYaySsoa30T5Mp5kPD7Ni\u002B5Rtt7qofzqO553jqQHmHExi5p8RcRNsb6y7VWtnm1ecjUdcdM7QClwhQPl8zi3o\u002BiXdREMMwvbtvv0KYfmRJSBtvlVY93O6ujLlc8WdsYcdE1RmutlV3kO20tzcXFRohBFerQ/ccE6c11EJB53xIk7EndmNSnObxIRsSwrMucWUvh2AxiGiWmYGOassjB/0yxzzPzvOWfyAyvlXYiiBFoWAAAAAElFTkSuQmCC",
+              "WhenOpened": "2024-10-07T00:03:47.586Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "splash.svg",
+              "DocumentMoniker": "C:\\Users\\xowjd\\Desktop\\GitProjects\\Maui\\Decaf_MAUI\\Decaf\\Resources\\Splash\\splash.svg",
+              "RelativeDocumentMoniker": "Decaf\\Resources\\Splash\\splash.svg",
+              "ToolTip": "C:\\Users\\xowjd\\Desktop\\GitProjects\\Maui\\Decaf_MAUI\\Decaf\\Resources\\Splash\\splash.svg",
+              "RelativeToolTip": "Decaf\\Resources\\Splash\\splash.svg",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKMSURBVDhPjZNLSFRhFMd/3507M/dKPsacsYelWGZZFFJRkdSmNrUoatMiKggSN2YFEUX3MvQiiBYWtFAyggoXPSGyhQuhFrXQFr7GMFOowcZMUO9MM3pPi9Eao6gf/Bcfh3PO/5yPo8jAsqxI5vtvKKXuhMPhK4jInIBlWRH5Bw0NDYOWZUVs264B0DILKEUXCCIpZOIi7uetpHpCxN8GiffU4rrThEIhXzgcXiEidbZtH/5ZQKTV\u002B72oItjSYfG5vxwneoX2/iW80dvxb4ji9D4BIBAIeBsbG4fSOXJWzSR7qpt9D\u002BvWndpTlNXL2HCQ28PXaIuVEB2Dmsp8DiZqyN35FAFiw19IJpPcbmrq0wCq7\u002BvHd5Y\u002B2rMy5y3OcBXmqtccq9rB/uUFKI/GzfZRPhRdBhEQIRgKUlxSAoAm0uqtWNB5Yu\u002Bier5\u002BWOoWbnxAwAwQzDao3lLIobX5ePxemiImroCIzFm\u002BztT7/CPLzi8ej\u002BVxdeyu1nJjgMR3FwDl0fD4dJRHozuWACStjM/TGDlZ50tNqHuxejo\u002B\u002BZPL8wwqCvxUFPhZFfBSbIBMJti0wJjpDpJRQXfjzr6uj9u\u002BtYysCWijA4OPqzeXpVLJtE010zS9cZDM1DTa9ASLmoaOnh4cEYaySsoa30T5Mp5kPD7Ni\u002B5Rtt7qofzqO553jqQHmHExi5p8RcRNsb6y7VWtnm1ecjUdcdM7QClwhQPl8zi3o\u002BiXdREMMwvbtvv0KYfmRJSBtvlVY93O6ujLlc8WdsYcdE1RmutlV3kO20tzcXFRohBFerQ/ccE6c11EJB53xIk7EndmNSnObxIRsSwrMucWUvh2AxiGiWmYGOassjB/0yxzzPzvOWfyAyvlXYiiBFoWAAAAAElFTkSuQmCC",
+              "WhenOpened": "2024-10-07T00:03:46.297Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Users\\xowjd\\Desktop\\GitProjects\\Maui\\Decaf_MAUI\\Decaf\\App.xaml",
+              "RelativeDocumentMoniker": "Decaf\\App.xaml",
+              "ToolTip": "C:\\Users\\xowjd\\Desktop\\GitProjects\\Maui\\Decaf_MAUI\\Decaf\\App.xaml",
+              "RelativeToolTip": "Decaf\\App.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-10-07T00:03:40.747Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "IndeterminateRingDrawable.cs",
+              "DocumentMoniker": "C:\\Users\\xowjd\\Desktop\\GitProjects\\Maui\\Decaf_MAUI\\Decaf.Template\\CircleProgressBar\\IndeterminateRingDrawable.cs",
+              "RelativeDocumentMoniker": "Decaf.Template\\CircleProgressBar\\IndeterminateRingDrawable.cs",
+              "ToolTip": "C:\\Users\\xowjd\\Desktop\\GitProjects\\Maui\\Decaf_MAUI\\Decaf.Template\\CircleProgressBar\\IndeterminateRingDrawable.cs",
+              "RelativeToolTip": "Decaf.Template\\CircleProgressBar\\IndeterminateRingDrawable.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACwAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-06T23:54:34.185Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RoundedCheckBox.xaml",
+              "DocumentMoniker": "C:\\Users\\xowjd\\Desktop\\GitProjects\\Maui\\Decaf_MAUI\\Decaf.Template\\OnBoardingCheckBox\\RoundedCheckBox.xaml",
+              "RelativeDocumentMoniker": "Decaf.Template\\OnBoardingCheckBox\\RoundedCheckBox.xaml",
+              "ToolTip": "C:\\Users\\xowjd\\Desktop\\GitProjects\\Maui\\Decaf_MAUI\\Decaf.Template\\OnBoardingCheckBox\\RoundedCheckBox.xaml",
+              "RelativeToolTip": "Decaf.Template\\OnBoardingCheckBox\\RoundedCheckBox.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-10-06T23:54:19.769Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "OnBoardingCheckBoxControl.xaml",
+              "DocumentMoniker": "C:\\Users\\xowjd\\Desktop\\GitProjects\\Maui\\Decaf_MAUI\\Decaf.Template\\OnBoardingCheckBox\\OnBoardingCheckBoxControl.xaml",
+              "RelativeDocumentMoniker": "Decaf.Template\\OnBoardingCheckBox\\OnBoardingCheckBoxControl.xaml",
+              "ToolTip": "C:\\Users\\xowjd\\Desktop\\GitProjects\\Maui\\Decaf_MAUI\\Decaf.Template\\OnBoardingCheckBox\\OnBoardingCheckBoxControl.xaml",
+              "RelativeToolTip": "Decaf.Template\\OnBoardingCheckBox\\OnBoardingCheckBoxControl.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-10-06T23:53:41.195Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PageExtensions.cs",
+              "DocumentMoniker": "C:\\Users\\xowjd\\Desktop\\GitProjects\\Maui\\Decaf_MAUI\\Decaf.Extension\\PageExtensions.cs",
+              "RelativeDocumentMoniker": "Decaf.Extension\\PageExtensions.cs",
+              "ToolTip": "C:\\Users\\xowjd\\Desktop\\GitProjects\\Maui\\Decaf_MAUI\\Decaf.Extension\\PageExtensions.cs",
+              "RelativeToolTip": "Decaf.Extension\\PageExtensions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-05T09:12:13.964Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "OnBoardingPage.xaml",
+              "DocumentMoniker": "C:\\Users\\xowjd\\Desktop\\GitProjects\\Maui\\Decaf_MAUI\\Decaf.OnBoarding\\Views\\OnBoardingPage.xaml",
+              "RelativeDocumentMoniker": "Decaf.OnBoarding\\Views\\OnBoardingPage.xaml",
+              "ToolTip": "C:\\Users\\xowjd\\Desktop\\GitProjects\\Maui\\Decaf_MAUI\\Decaf.OnBoarding\\Views\\OnBoardingPage.xaml",
+              "RelativeToolTip": "Decaf.OnBoarding\\Views\\OnBoardingPage.xaml",
+              "ViewState": "AgIAADAAAAAAAAAAAAAAAEcAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-10-06T23:46:04.577Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "app.manifest",
+              "DocumentMoniker": "C:\\Users\\xowjd\\Desktop\\GitProjects\\Maui\\Decaf_MAUI\\Decaf\\Platforms\\Windows\\app.manifest",
+              "RelativeDocumentMoniker": "Decaf\\Platforms\\Windows\\app.manifest",
+              "ToolTip": "C:\\Users\\xowjd\\Desktop\\GitProjects\\Maui\\Decaf_MAUI\\Decaf\\Platforms\\Windows\\app.manifest",
+              "RelativeToolTip": "Decaf\\Platforms\\Windows\\app.manifest",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001203|",
+              "WhenOpened": "2024-10-07T00:04:20.37Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "OnBoardingPageViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\xowjd\\Desktop\\GitProjects\\Maui\\Decaf_MAUI\\Decaf.OnBoarding\\ViewModels\\OnBoardingPageViewModel.cs",
+              "RelativeDocumentMoniker": "Decaf.OnBoarding\\ViewModels\\OnBoardingPageViewModel.cs",
+              "ToolTip": "C:\\Users\\xowjd\\Desktop\\GitProjects\\Maui\\Decaf_MAUI\\Decaf.OnBoarding\\ViewModels\\OnBoardingPageViewModel.cs",
+              "RelativeToolTip": "Decaf.OnBoarding\\ViewModels\\OnBoardingPageViewModel.cs",
+              "ViewState": "AgIAAGcAAAAAAAAAAAAiwJEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-06T23:47:46.194Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Package.appxmanifest",
+              "DocumentMoniker": "C:\\Users\\xowjd\\Desktop\\GitProjects\\Maui\\Decaf_MAUI\\Decaf\\Platforms\\Windows\\Package.appxmanifest",
+              "RelativeDocumentMoniker": "Decaf\\Platforms\\Windows\\Package.appxmanifest",
+              "ToolTip": "C:\\Users\\xowjd\\Desktop\\GitProjects\\Maui\\Decaf_MAUI\\Decaf\\Platforms\\Windows\\Package.appxmanifest",
+              "RelativeToolTip": "Decaf\\Platforms\\Windows\\Package.appxmanifest",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001793|",
+              "WhenOpened": "2024-10-07T00:04:22.724Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "CircleProgressBarDrawable.cs",
+              "DocumentMoniker": "C:\\Users\\xowjd\\Desktop\\GitProjects\\Maui\\Decaf_MAUI\\Decaf.Template\\CircleProgressBar\\CircleProgressBarDrawable.cs",
+              "RelativeDocumentMoniker": "Decaf.Template\\CircleProgressBar\\CircleProgressBarDrawable.cs",
+              "ToolTip": "C:\\Users\\xowjd\\Desktop\\GitProjects\\Maui\\Decaf_MAUI\\Decaf.Template\\CircleProgressBar\\CircleProgressBarDrawable.cs",
+              "RelativeToolTip": "Decaf.Template\\CircleProgressBar\\CircleProgressBarDrawable.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-06T23:54:54.895Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Views_OnBoardingPage.xaml.sg.cs",
+              "DocumentMoniker": "C:\\Users\\xowjd\\AppData\\Local\\Temp\\.vsdbgsrc\\4907d011a4bb571ee54ecc98c5890182451931d2\\Views_OnBoardingPage.xaml.sg.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\4907d011a4bb571ee54ecc98c5890182451931d2\\Views_OnBoardingPage.xaml.sg.cs",
+              "ToolTip": "C:\\Users\\xowjd\\AppData\\Local\\Temp\\.vsdbgsrc\\4907d011a4bb571ee54ecc98c5890182451931d2\\Views_OnBoardingPage.xaml.sg.cs [\uC77D\uAE30 \uC804\uC6A9]",
+              "RelativeToolTip": "..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\4907d011a4bb571ee54ecc98c5890182451931d2\\Views_OnBoardingPage.xaml.sg.cs [\uC77D\uAE30 \uC804\uC6A9]",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-06T23:52:35.099Z",
+              "EditorCaption": " [\uC77D\uAE30 \uC804\uC6A9]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "App.g.i.cs",
+              "DocumentMoniker": "C:\\Users\\xowjd\\Desktop\\GitProjects\\Maui\\Decaf_MAUI\\Decaf\\obj\\Debug\\net8.0-windows10.0.19041.0\\win10-x64\\Platforms\\Windows\\App.g.i.cs",
+              "RelativeDocumentMoniker": "Decaf\\obj\\Debug\\net8.0-windows10.0.19041.0\\win10-x64\\Platforms\\Windows\\App.g.i.cs",
+              "ToolTip": "C:\\Users\\xowjd\\Desktop\\GitProjects\\Maui\\Decaf_MAUI\\Decaf\\obj\\Debug\\net8.0-windows10.0.19041.0\\win10-x64\\Platforms\\Windows\\App.g.i.cs",
+              "RelativeToolTip": "Decaf\\obj\\Debug\\net8.0-windows10.0.19041.0\\win10-x64\\Platforms\\Windows\\App.g.i.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAIA+wEAAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-06T23:44:48.334Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

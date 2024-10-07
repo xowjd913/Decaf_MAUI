@@ -1,15 +1,117 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<base:ContentPageBase xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+<TabbedPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              
              xmlns:base="clr-namespace:Decaf.Base.MVVM;assembly=Decaf.Base"
+             xmlns:android="clr-namespace:Microsoft.Maui.Controls.PlatformConfiguration.AndroidSpecific;assembly=Microsoft.Maui.Controls"
              
+             NavigationPage.HasNavigationBar="False"
+             NavigationPage.HasBackButton="False"
+                      
+             BackgroundColor="#FFFFFF"
+            
+             android:TabbedPage.ToolbarPlacement="Bottom"
+                      
              x:Class="Decaf.Main.Views.MainPage"
-             Title="MainPage">
-    <VerticalStackLayout>
-        <Label 
+             Title="MainTabbedPage">
+    
+    <ContentPage Title="Home"
+                 NavigationPage.HasNavigationBar="False">
+        <ScrollView>
+            <Grid Margin="24, 35, 24, 0"
+           VerticalOptions="Start">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <Label x:Name="Title"
+                Grid.Row="0"
+                Text="따뜻한 녹차로&#10;하루를 시작해 보세요 🍵"
+                FontFamily="Suit_600"
+                TextColor="#020100"
+                FontSize="24"/>
+
+                <Frame Grid.Row="1"
+                HeightRequest="110"
+                CornerRadius="20"
+                
+                HasShadow="False"
+
+                BorderColor="Transparent"
+                
+                Margin="0, 40, 0, 0"
+                Padding="0, 0, 0, 0"
+                
+                BackgroundColor="#F9FAF7">
+
+                    <Grid Margin="16, 20, 20, 0"
+                   VerticalOptions="Start">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+
+                        <VerticalStackLayout Grid.Column="0"
+                                      Spacing="8">
+
+                            <Label FontSize="16">
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <Span Text="TJ"
+                                        FontFamily="Suit_600"
+                                        TextColor="#557705"/>
+                                        <Span Text="님의 카페인 섭취량"
+                                        FontFamily="Suit_600"
+                                        TextColor="#020100"/>
+                                    </FormattedString>
+                                </Label.FormattedText>
+                            </Label>
+                            <ProgressBar HeightRequest="8"/>
+                            <Label>
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <Span Text="160"
+                                        FontFamily="Suit_700"
+                                        TextColor="#557705"
+                                       FontSize="20"/>
+                                        <Span Text=" / 200mg"
+                                        FontFamily="Suit_400"
+                                        TextColor="#ABAFA1"
+                                       FontSize="12"/>
+                                    </FormattedString>
+                                </Label.FormattedText>
+                            </Label>
+                        </VerticalStackLayout>
+                        <VerticalStackLayout Grid.Column="2"
+                                      Spacing="6">
+
+                            <Image WidthRequest="72"
+                            HeightRequest="30"
+                            Source="Resource/Images/today_caffeine_thumb"/>
+
+                            <Button WidthRequest="72"
+                             HeightRequest="32"
+                             Padding="0, 0, 0, 0"
+                             Text="입력"
+                             FontSize="12"
+                             TextColor="#557705"
+                             BackgroundColor="White"
+                             BorderColor="#CED8B6"
+                             BorderWidth="1"/>
+
+                        </VerticalStackLayout>
+                    </Grid>
+                </Frame>
+            </Grid>
+        </ScrollView>
+    </ContentPage>
+   
+    <!--<VerticalStackLayout>-->
+        <!--<Label 
             Text="Welcome to MainPage"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
-    </VerticalStackLayout>
-</base:ContentPageBase>
+    </VerticalStackLayout>-->
+</TabbedPage>

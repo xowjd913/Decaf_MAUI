@@ -13,7 +13,7 @@ namespace Decaf
     {
         public static MauiApp CreateMauiApp()
         {
-            return MauiApp.CreateBuilder()
+            var builder = MauiApp.CreateBuilder()
                 .UseMauiApp<App>()
                 .ConfigureFonts(fonts =>
                 {
@@ -29,7 +29,7 @@ namespace Decaf
                     fonts.AddFont("SUIT-ExtraBold.ttf", "Suit_800");
                     fonts.AddFont("SUIT-Heavy.ttf", "Suit_900");
                 })
-                .UsePrism(prism => 
+                .UsePrism(prism =>
                 {
                     prism.ConfigureServices(services =>
                     {
@@ -39,14 +39,14 @@ namespace Decaf
                     {
                         builder.AddDebug();
                     })
-                    .RegisterTypes(containerRegistry => 
+                    .RegisterTypes(containerRegistry =>
                     {
                         Debug.WriteLine($"[{nameof(MauiProgram)}] [L] - Register Types");
 
                         containerRegistry.RegisterForNavigation<MainPage, MainPageViewModel>();
                         containerRegistry.RegisterForNavigation<OnBoardingPage, OnBoardingPageViewModel>();
                     })
-                    .OnInitialized(containerProvider => 
+                    .OnInitialized(containerProvider =>
                     {
                         var eventAggregator = containerProvider.Resolve<IEventAggregator>();
                         eventAggregator?.GetEvent<NavigationRequestEvent>().Subscribe(context =>
@@ -76,13 +76,14 @@ namespace Decaf
                             }
                         });
                     })
-                    .CreateWindow(async navigationService => 
+                    .CreateWindow(async navigationService =>
                     {
                         Debug.WriteLine($"[{nameof(MauiProgram)}] [L] - Create window");
-                        var navigationResult = await navigationService.NavigateAsync("/" + nameof(NavigationPage) + "/" + nameof(OnBoardingPage));
+                        var navigationResult = await navigationService.NavigateAsync("/" + nameof(NavigationPage) + "/" + nameof(MainPage));
                     });
-                })
-                .Build();
+                });
+
+            return builder.Build();
         }
     }
 }
